@@ -4,5 +4,11 @@
   "main": "dist/index.js",
   "repository": "https://github.com/Pajdzik/muffled.git",
   "author": "Kamil Pajdzik <pajdziupaj@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
 }
