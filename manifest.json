@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Muffled",
+  "version": "0.1",
+  "description": "TBD",
+  "content_scripts": [
+    {
+      "matches": ["*://*.audible.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}

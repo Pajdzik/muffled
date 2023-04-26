@@ -9,6 +9,7 @@
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "yarn copy-manifest && tsc",
+    "copy-manifest": "cp manifest.json dist/manifest.json"
   }
 }
