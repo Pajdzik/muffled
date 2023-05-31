@@ -2,14 +2,22 @@
   "name": "muffled",
   "version": "0.0.1",
   "main": "dist/index.js",
+  "type": "module",
   "repository": "https://github.com/Pajdzik/muffled.git",
   "author": "Kamil Pajdzik <pajdziupaj@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/firefox-webext-browser": "^111.0.1",
+    "esbuild": "^0.17.18",
     "typescript": "^5.0.4"
   },
   "scripts": {
-    "build": "yarn copy-manifest && tsc",
+    "build-index": "esbuild ./src/index.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/index.js --format=esm",
+    "build-background": "esbuild ./src/background.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/background.js --format=esm",
+    "bundle": "yarn copy-manifest && yarn build-background && yarn build-index",
     "copy-manifest": "cp manifest.json dist/manifest.json"
+  },
+  "dependencies": {
+    "linkedom": "^0.14.25"
   }
 }
