@@ -5,8 +5,14 @@
   "description": "TBD",
   "content_scripts": [
     {
-      "matches": ["*://*.audible.com/*"],
+      "matches": ["*://audible.com/*", "*://*.audible.com/*"],
       "js": ["index.js"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false,
+    "type": "module"
+  },
+  "permissions": ["webRequest", "*://*.spl.org/*"]
 }
