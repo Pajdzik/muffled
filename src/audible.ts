@@ -5,17 +5,31 @@ export type Book = {
   title: string;
 };
 
-export const findBooks = (): Book[] => {
+export type BookComponent = {
+  book: Book;
+  element: HTMLElement;
+};
+
+export const findBooks = (): BookComponent[] => {
   const productList = findProductList();
   if (!productList) {
     return [];
   }
 
   const products = findProducts(productList);
-  const attributes = findProductsAttributes(products);
-  const books = parseBooksData(attributes);
+  const bookComponents = [];
 
-  return books;
+  for (const element of products) {
+    const book = findBookData(element);
+    if (book) {
+      bookComponents.push({
+        book,
+        element,
+      });
+    }
+  }
+
+  return bookComponents;
 };
 
 const findProductList = (): HTMLDivElement | undefined => {
@@ -45,19 +59,12 @@ const findProducts = (
   return productContainers;
 };
 
-const findProductsAttributes = (
-  productContainers: NodeListOf<HTMLLIElement>
-): HTMLUListElement[] => {
-  const productsAttributes: HTMLUListElement[] = [];
-
-  for (const productContainer of productContainers) {
-    const productAttributes = findProductAttributes(productContainer);
-    if (productAttributes) {
-      productsAttributes.push(productAttributes);
-    }
+const findBookData = (productContainer: HTMLLIElement): Book | undefined => {
+  const attributes = findProductAttributes(productContainer);
+  if (!attributes) {
+    return undefined;
   }
-
-  return productsAttributes;
+  return parseBooksData(attributes);
 };
 
 const findProductAttributes = (
@@ -74,11 +81,11 @@ const findProductAttributes = (
   return attributesList;
 };
 
-const parseBooksData = (productAttributes: HTMLUListElement[]): Book[] => {
-  return productAttributes.map((productAttribute) => ({
+const parseBooksData = (productAttribute: HTMLUListElement): Book => {
+  return {
     author: getAuthor(productAttribute),
     title: getTitle(productAttribute),
-  }));
+  };
 };
 
 const getTitle = (productAttributeList: HTMLUListElement): string => {
