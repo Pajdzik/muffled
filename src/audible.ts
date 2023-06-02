@@ -12,11 +12,7 @@ export const findBooks = (): Book[] => {
   }
 
   const products = findProducts(productList);
-  console.log(products[0]);
-
   const attributes = findProductsAttributes(products);
-  console.log(attributes);
-
   const books = parseBooksData(attributes);
 
   return books;
@@ -89,9 +85,6 @@ const getTitle = (productAttributeList: HTMLUListElement): string => {
   const titleElement = productAttributeList.querySelector<HTMLLIElement>(
     "li[class='bc-list-item']"
   );
-
-  //   console.log(`Title element`);
-  //   console.log(titleElement);
 
   const titleLink = titleElement?.querySelector("a");
   if (!titleLink) {
