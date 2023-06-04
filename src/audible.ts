@@ -1,9 +1,5 @@
 import { logDebug } from "./debug.js";
-
-export type Book = {
-  author: string;
-  title: string;
-};
+import { Book } from "./types.js";
 
 export type BookComponent = {
   book: Book;
