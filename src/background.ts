@@ -1,4 +1,4 @@
-import { AddonMessage, Book } from "./types.js";
+import { AddonMessage, Book, BookAvailability } from "./types.js";
 import { queryLibrary } from "./overdrive.js";
 
 console.log("background script loaded");
@@ -8,19 +8,13 @@ browser.runtime.onMessage.addListener(async (message: AddonMessage) => {
   console.log(JSON.stringify(message, undefined, 2));
 
   if (message.data === "parseBook") {
-    console.log("changed color");
+    return parseBook(message.book);
   }
 
-  const resp = await queryLibrary("spl", {
-    author: "Theresa MacPhail",
-    title: "Allergic",
-  });
-
-  console.log("[Background] Lib response");
-  console.log(JSON.stringify(resp, undefined, 2));
-  console.log("[Background] Sending response");
-
-  return new Promise((resolve, reject) => {
-    setTimeout(() => resolve("foo"), 5000);
-  });
+  throw new Error(`Unknown message: ${message}`);
 });
+
+const parseBook = async (book: Book): Promise<BookAvailability> => {
+  const response = queryLibrary("spl", book);
+  return response;
+};

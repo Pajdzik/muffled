@@ -1,5 +1,5 @@
 import { logDebug } from "./debug.js";
-import { Book } from "./types.js";
+import { Book, BookAvailability } from "./types.js";
 
 export type BookComponent = {
   book: Book;
@@ -109,4 +109,37 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
   }
 
   return authorLink.innerText;
+};
+
+export const createButtons = (bookAvailability: BookAvailability) => {
+  const ebookButton = createButton(
+    `Ebook ${bookAvailability.ebook.isHoldable ? "" : "not "}available`
+  );
+
+  const audiobookButton = createButton(
+    `Audiobook ${bookAvailability.audiobook.isHoldable ? "" : "not "}available`
+  );
+
+  return [audiobookButton, ebookButton];
+};
+
+export const createButton = (caption: string) => {
+  const outerDiv = document.createElement("div");
+  outerDiv.className = "bc-row bc-spacing-top-micro";
+
+  const innerDiv = document.createElement("div");
+  innerDiv.className = "bc-row bc-text-center";
+
+  const span = document.createElement("span");
+  span.className = "bc-button bc-button-secondary bc-button-small";
+
+  const button = document.createElement("button");
+  button.className = "bc-button-text";
+  button.innerText = caption;
+
+  span.appendChild(button);
+  innerDiv.appendChild(span);
+  outerDiv.appendChild(innerDiv);
+
+  return outerDiv;
 };

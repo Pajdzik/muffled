@@ -11,8 +11,14 @@ export type AddonMessage =
   | never;
 
 export type AddonResponse<TMessage extends AddonMessage> =
-  TMessage extends AddonMessage
-    ? {
-        foo: string;
-      }
-    : never;
+  TMessage extends AddonMessage ? BookAvailability : never;
+
+export type BookAvailability = {
+  ebook: Availability;
+  audiobook: Availability;
+};
+
+export type Availability = {
+  isHoldable: boolean;
+  isAvailable: boolean;
+};

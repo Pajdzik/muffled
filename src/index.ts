@@ -1,4 +1,4 @@
-import { findBooks } from "./audible.js";
+import { createButton, createButtons, findBooks } from "./audible.js";
 import { AddonMessage, AddonResponse, Events } from "./types.js";
 
 document.body.style.border = "5px solid red";
@@ -10,19 +10,27 @@ const sendMessageToBackgroundScript = async <TMessage extends AddonMessage>(
 };
 
 const main = async () => {
-  const booksOnPage = findBooks();
-  console.log(booksOnPage);
+  const bookElements = findBooks();
 
-  const response = await sendMessageToBackgroundScript({
-    data: "parseBook",
-    book: {
-      title: "Allergic",
-      author: "Theresa MacPhail",
-    },
+  bookElements.map(async (bookElement) => {
+    const bookAvailability = await sendMessageToBackgroundScript({
+      data: "parseBook",
+      book: bookElement.book,
+    });
+
+    console.log(
+      `Availability of ${bookElement.book.title} is ${JSON.stringify(
+        bookAvailability
+      )}`
+    );
+
+    const buttonContainer =
+      bookElement.element.querySelector("#adbl-buy-box-area");
+    const [audiobookButton, ebookButton] = createButtons(bookAvailability);
+
+    buttonContainer?.appendChild(audiobookButton);
+    buttonContainer?.appendChild(ebookButton);
   });
-
-  console.log("[Foreground2] received response");
-  console.log(JSON.stringify(response.foo, null, 2));
 };
 
 main();

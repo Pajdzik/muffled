@@ -1,6 +1,6 @@
 // https://thunder.api.overdrive.com/v2/libraries/spl/media?query=Allergic%20Theresa%20MacPhail&format=ebook-overdrive,ebook-media-do,ebook-overdrive-provisional,audiobook-overdrive,audiobook-overdrive-provisional,magazine-overdrive&perPage=24&page=1&x-client-id=dewey
 
-import { Book } from "./types.js";
+import { AddonMessage, Availability, Book, BookAvailability } from "./types.js";
 
 const API_BASE = "https://thunder.api.overdrive.com/v2";
 const BOOK_FORMAT_QUERY =
@@ -22,6 +22,11 @@ const OVERDRIVE_HEADERS: HeadersInit = {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
 };
 
+const NOT_AVAILABLE = {
+  isAvailable: false,
+  isHoldable: false,
+};
+
 const queryOverdrive = (input: RequestInfo | URL): Promise<Response> => {
   console.log(`URL: ${input}`);
   console.log(`headers: ${JSON.stringify(OVERDRIVE_HEADERS, undefined, 2)}`);
@@ -29,10 +34,48 @@ const queryOverdrive = (input: RequestInfo | URL): Promise<Response> => {
   return fetch(input, OVERDRIVE_HEADERS);
 };
 
-export const queryLibrary = async (library: string, book: Book) => {
+export const queryLibrary = async (
+  library: string,
+  book: Book
+): Promise<BookAvailability> => {
   const httpResponse = await queryOverdriveApi(library, book);
-  const overdriveResponse: Overdrive = await httpResponse.json();
-  return overdriveResponse;
+  const overdriveResponse: OverdriveResponse = await httpResponse.json();
+
+  return parseOverdriveResponse(overdriveResponse);
+};
+
+const parseOverdriveResponse = (
+  overdriveResponse: OverdriveResponse
+): BookAvailability => {
+  return {
+    audiobook: parseAvailability(overdriveResponse, "audiobook"),
+    ebook: parseAvailability(overdriveResponse, "ebook"),
+  };
+};
+
+const parseAvailability = (
+  overdriveResponse: OverdriveResponse,
+  key: "ebook" | "audiobook"
+): Availability => {
+  const availabilities = overdriveResponse.items.filter(
+    (item) => item.type.id.toLowerCase() === key
+  );
+
+  if (!availabilities || !availabilities.length) {
+    return NOT_AVAILABLE;
+  }
+
+  const isHoldable = availabilities.some(
+    (availability) => availability.isHoldable
+  );
+  const isAvailable = availabilities.some(
+    (availability) => availability.isAvailable
+  );
+
+  return {
+    isAvailable,
+    isHoldable,
+  };
 };
 
 const queryOverdriveApi = async (
@@ -61,7 +104,7 @@ const flattenBookData = (book: Book): string => {
   throw new Error("Empty book data");
 };
 
-type Overdrive = {
+type OverdriveResponse = {
   totalItems: number;
   queryKeys: QueryKeys;
   facets?: Facets;
