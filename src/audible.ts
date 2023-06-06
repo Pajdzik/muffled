@@ -1,6 +1,6 @@
 import { Book, encodeBookData } from "./book.js";
 import { logDebug } from "./debug.js";
-import { Availability, TitleAvailability } from "./types.js";
+import { Availability, BookAvailability, TitleAvailability } from "./types.js";
 
 export type BookComponent = {
   book: Book;
@@ -117,22 +117,16 @@ export const createButtons = (
   bookAvailability: TitleAvailability,
   library: string
 ) => {
-  const ebookCaption = getCaption("eBook", bookAvailability.ebook.availability);
   const ebookButton = createButton(
-    ebookCaption,
     book,
-    bookAvailability.ebook.id,
+    "eBook",
+    bookAvailability.ebook,
     library
   );
-
-  const audiobookCaption = getCaption(
-    "Audiobook",
-    bookAvailability.audiobook.availability
-  );
   const audiobookButton = createButton(
-    audiobookCaption,
     book,
-    bookAvailability.audiobook.id,
+    "Audiobook",
+    bookAvailability.audiobook,
     library
   );
 
@@ -156,11 +150,15 @@ const getCaption = (
 };
 
 export const createButton = (
-  caption: string,
   book: Book,
-  id: string,
+  type: "eBook" | "Audiobook",
+  availability: BookAvailability,
   library: string
 ) => {
+  const openNewTab = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   const outerDiv = document.createElement("div");
   outerDiv.className = "bc-row bc-spacing-top-micro";
 
@@ -170,18 +168,23 @@ export const createButton = (
   const span = document.createElement("span");
   span.className = "bc-button bc-button-secondary bc-button-small";
 
+  const caption = getCaption(type, availability.availability);
   const button = document.createElement("button");
   button.className = "bc-button-text";
+  button.textContent = caption;
 
-  const link = document.createElement("a");
-  link.innerText = caption;
-  link.href = `https://libbyapp.com/search/${library}/search/query-${encodeBookData(
-    book
-  )}/page-1/${id}/request?key=${library}`;
+  if (availability.availability !== "not available") {
+    const link = `https://libbyapp.com/search/${library}/search/query-${encodeBookData(
+      book
+    )}/page-1/${availability.id}/request?key=${library}`;
 
-  // https://libbyapp.com/search/spl/search/query-Allergic%20%20Theresa%20MacPhail/page-1/9350370/request?key=spl
+    button.onclick = () => {
+      openNewTab(link);
+    };
+  } else {
+    button.disabled = true;
+  }
 
-  button.appendChild(link);
   span.appendChild(button);
   innerDiv.appendChild(span);
   outerDiv.appendChild(innerDiv);
