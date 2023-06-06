@@ -1,5 +1,5 @@
-import { createButton, createButtons, findBooks } from "./audible.js";
-import { AddonMessage, AddonResponse, Events } from "./types.js";
+import { createButtons, findBooks } from "./audible.js";
+import { AddonMessage, AddonResponse } from "./types.js";
 
 document.body.style.border = "5px solid red";
 
@@ -26,7 +26,11 @@ const main = async () => {
 
     const buttonContainer =
       bookElement.element.querySelector("#adbl-buy-box-area");
-    const [audiobookButton, ebookButton] = createButtons(bookAvailability);
+    const [audiobookButton, ebookButton] = createButtons(
+      bookElement.book,
+      bookAvailability,
+      "spl"
+    );
 
     buttonContainer?.appendChild(audiobookButton);
     buttonContainer?.appendChild(ebookButton);

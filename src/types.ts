@@ -1,7 +1,4 @@
-export type Book = {
-  author: string;
-  title: string;
-};
+import { Book } from "./book.js";
 
 export type AddonMessage =
   | {
@@ -11,14 +8,16 @@ export type AddonMessage =
   | never;
 
 export type AddonResponse<TMessage extends AddonMessage> =
-  TMessage extends AddonMessage ? BookAvailability : never;
+  TMessage extends AddonMessage ? TitleAvailability : never;
+
+export type TitleAvailability = {
+  ebook: BookAvailability;
+  audiobook: BookAvailability;
+};
 
 export type BookAvailability = {
-  ebook: Availability;
-  audiobook: Availability;
+  id: string;
+  availability: Availability;
 };
 
-export type Availability = {
-  isHoldable: boolean;
-  isAvailable: boolean;
-};
+export type Availability = "available" | "holdable" | "not available";

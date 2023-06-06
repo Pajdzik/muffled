@@ -1,5 +1,6 @@
-import { AddonMessage, Book, BookAvailability } from "./types.js";
+import { AddonMessage, TitleAvailability } from "./types.js";
 import { queryLibrary } from "./overdrive.js";
+import { Book } from "./book.js";
 
 console.log("background script loaded");
 
@@ -14,7 +15,7 @@ browser.runtime.onMessage.addListener(async (message: AddonMessage) => {
   throw new Error(`Unknown message: ${message}`);
 });
 
-const parseBook = async (book: Book): Promise<BookAvailability> => {
+const parseBook = async (book: Book): Promise<TitleAvailability> => {
   const response = queryLibrary("spl", book);
   return response;
 };

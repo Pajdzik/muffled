@@ -1,10 +1,14 @@
 // https://thunder.api.overdrive.com/v2/libraries/spl/media?query=Allergic%20Theresa%20MacPhail&format=ebook-overdrive,ebook-media-do,ebook-overdrive-provisional,audiobook-overdrive,audiobook-overdrive-provisional,magazine-overdrive&perPage=24&page=1&x-client-id=dewey
 
-import { AddonMessage, Availability, Book, BookAvailability } from "./types.js";
+import { Book, encodeBookData } from "./book.js";
+import { Availability, BookAvailability, TitleAvailability } from "./types.js";
 
 const API_BASE = "https://thunder.api.overdrive.com/v2";
 const BOOK_FORMAT_QUERY =
   "format=ebook-overdrive,ebook-media-do,ebook-overdrive-provisional,audiobook-overdrive,audiobook-overdrive-provisional,magazine-overdrive";
+const FAUCET_QUERY = "includeFacets=false";
+const PER_PAGE_QUERY = "perPage=24";
+const PAGE_QUERY = "page=1";
 const CLIENT_ID_QUERY = "x-client-id=dewey";
 
 const OVERDRIVE_HEADERS: HeadersInit = {
@@ -22,11 +26,6 @@ const OVERDRIVE_HEADERS: HeadersInit = {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
 };
 
-const NOT_AVAILABLE = {
-  isAvailable: false,
-  isHoldable: false,
-};
-
 const queryOverdrive = (input: RequestInfo | URL): Promise<Response> => {
   console.log(`URL: ${input}`);
   console.log(`headers: ${JSON.stringify(OVERDRIVE_HEADERS, undefined, 2)}`);
@@ -37,32 +36,36 @@ const queryOverdrive = (input: RequestInfo | URL): Promise<Response> => {
 export const queryLibrary = async (
   library: string,
   book: Book
-): Promise<BookAvailability> => {
+): Promise<TitleAvailability> => {
   const httpResponse = await queryOverdriveApi(library, book);
   const overdriveResponse: OverdriveResponse = await httpResponse.json();
 
-  return parseOverdriveResponse(overdriveResponse);
+  return parseOverdriveResponse(overdriveResponse, book.title);
 };
 
 const parseOverdriveResponse = (
-  overdriveResponse: OverdriveResponse
-): BookAvailability => {
+  overdriveResponse: OverdriveResponse,
+  title: string
+): TitleAvailability => {
   return {
-    audiobook: parseAvailability(overdriveResponse, "audiobook"),
-    ebook: parseAvailability(overdriveResponse, "ebook"),
+    audiobook: parseAvailability(overdriveResponse, title, "audiobook"),
+    ebook: parseAvailability(overdriveResponse, title, "ebook"),
   };
 };
 
 const parseAvailability = (
   overdriveResponse: OverdriveResponse,
+  title: string,
   key: "ebook" | "audiobook"
-): Availability => {
-  const availabilities = overdriveResponse.items.filter(
-    (item) => item.type.id.toLowerCase() === key
-  );
+): BookAvailability => {
+  const lowerCaseTitle = title.trim().toLowerCase();
+
+  const availabilities = overdriveResponse.items
+    .filter((item) => item.title.toLowerCase() === lowerCaseTitle)
+    .filter((item) => item.type.id.trim().toLowerCase() === key);
 
   if (!availabilities || !availabilities.length) {
-    return NOT_AVAILABLE;
+    return { id: "0", availability: "not available" };
   }
 
   const isHoldable = availabilities.some(
@@ -72,10 +75,12 @@ const parseAvailability = (
     (availability) => availability.isAvailable
   );
 
-  return {
-    isAvailable,
-    isHoldable,
-  };
+  const availability = isAvailable
+    ? "available"
+    : isHoldable
+    ? "holdable"
+    : "not available";
+  return { id: availabilities[0].id, availability };
 };
 
 const queryOverdriveApi = async (
@@ -84,24 +89,9 @@ const queryOverdriveApi = async (
 ): Promise<Response> => {
   const resource = `libraries/${library}/media`;
   const bookQuery = `query=${encodeBookData(book)}`;
-  const url = `${API_BASE}/${resource}?${bookQuery}&${BOOK_FORMAT_QUERY}&${CLIENT_ID_QUERY}`;
+  const url = `${API_BASE}/${resource}?${bookQuery}&${BOOK_FORMAT_QUERY}&${FAUCET_QUERY}&${PER_PAGE_QUERY}&${PAGE_QUERY}&${CLIENT_ID_QUERY}`;
 
   return queryOverdrive(url);
-};
-
-const encodeBookData = (book: Book) =>
-  encodeURIComponent(flattenBookData(book));
-
-const flattenBookData = (book: Book): string => {
-  if (book.author && book.title) {
-    return `${book.title}  ${book.author}`;
-  } else if (book.author) {
-    return book.author;
-  } else if (book.title) {
-    return book.title;
-  }
-
-  throw new Error("Empty book data");
 };
 
 type OverdriveResponse = {

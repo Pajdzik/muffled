@@ -1,5 +1,6 @@
+import { Book, encodeBookData } from "./book.js";
 import { logDebug } from "./debug.js";
-import { Book, BookAvailability } from "./types.js";
+import { Availability, TitleAvailability } from "./types.js";
 
 export type BookComponent = {
   book: Book;
@@ -111,19 +112,55 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
   return authorLink.innerText;
 };
 
-export const createButtons = (bookAvailability: BookAvailability) => {
+export const createButtons = (
+  book: Book,
+  bookAvailability: TitleAvailability,
+  library: string
+) => {
+  const ebookCaption = getCaption("eBook", bookAvailability.ebook.availability);
   const ebookButton = createButton(
-    `Ebook ${bookAvailability.ebook.isHoldable ? "" : "not "}available`
+    ebookCaption,
+    book,
+    bookAvailability.ebook.id,
+    library
   );
 
+  const audiobookCaption = getCaption(
+    "Audiobook",
+    bookAvailability.audiobook.availability
+  );
   const audiobookButton = createButton(
-    `Audiobook ${bookAvailability.audiobook.isHoldable ? "" : "not "}available`
+    audiobookCaption,
+    book,
+    bookAvailability.audiobook.id,
+    library
   );
 
   return [audiobookButton, ebookButton];
 };
 
-export const createButton = (caption: string) => {
+const getCaption = (
+  type: "eBook" | "Audiobook",
+  availability: Availability
+) => {
+  switch (availability) {
+    case "available":
+      return `Rent ${type} 📗`;
+    case "holdable":
+      return `Place ${type} hold 📙`;
+    case "not available":
+      return `${type} not available 📕`;
+    default:
+      throw new Error("Unhandled availabilty");
+  }
+};
+
+export const createButton = (
+  caption: string,
+  book: Book,
+  id: string,
+  library: string
+) => {
   const outerDiv = document.createElement("div");
   outerDiv.className = "bc-row bc-spacing-top-micro";
 
@@ -135,8 +172,16 @@ export const createButton = (caption: string) => {
 
   const button = document.createElement("button");
   button.className = "bc-button-text";
-  button.innerText = caption;
 
+  const link = document.createElement("a");
+  link.innerText = caption;
+  link.href = `https://libbyapp.com/search/${library}/search/query-${encodeBookData(
+    book
+  )}/page-1/${id}/request?key=${library}`;
+
+  // https://libbyapp.com/search/spl/search/query-Allergic%20%20Theresa%20MacPhail/page-1/9350370/request?key=spl
+
+  button.appendChild(link);
   span.appendChild(button);
   innerDiv.appendChild(span);
   outerDiv.appendChild(innerDiv);
