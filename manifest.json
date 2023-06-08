@@ -14,5 +14,13 @@
     "persistent": false,
     "type": "module"
   },
-  "permissions": ["webRequest", "*://*.spl.org/*"]
+  "permissions": ["webRequest", "*://*.spl.org/*"],
+  "browser_action": {
+    "default_icon": {
+      "32": "icon.png",
+      "64": "icon.png"
+    },
+    "default_title": "Aulible",
+    "default_popup": "popup.html"
+  }
 }
