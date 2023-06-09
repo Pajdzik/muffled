@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Muffled",
   "version": "0.1",
   "description": "TBD",
@@ -11,11 +11,11 @@
   ],
   "background": {
     "scripts": ["background.js"],
-    "persistent": false,
     "type": "module"
   },
-  "permissions": ["webRequest", "*://*.spl.org/*"],
-  "browser_action": {
+  "permissions": ["webRequest"],
+  "host_permissions": ["*://*.audible.com/*"],
+  "action": {
     "default_icon": {
       "32": "icon.png",
       "64": "icon.png"
