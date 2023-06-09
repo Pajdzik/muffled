@@ -14,10 +14,28 @@
     </div>
 
     <!-- Tab content -->
-    <div id="status" class="tab-content">
-      <div id="audibleStatus"></div>
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
+    <div id="status" class="tab-content" style="display: block">
+      <div class="settings-container">
+        <div class="settings-row">
+          <div class="settings-label">Audible detected</div>
+          <div class="settings-value" id="audibleDetected">...</div>
+        </div>
+
+        <div class="settings-row">
+          <div class="settings-label">Listing detected</div>
+          <div class="settings-value" id="listingDetected">...</div>
+        </div>
+
+        <div class="settings-row">
+          <div class="settings-label">Library set up</div>
+          <div class="settings-value" id="librarySetup">...</div>
+        </div>
+
+        <div class="settings-row">
+          <div class="settings-label">Overdrive API</div>
+          <div class="settings-value" id="overdriveApiStatus">...</div>
+        </div>
+      </div>
     </div>
 
     <div id="settings" class="tab-content">
