@@ -1,3 +1,5 @@
+import { sendMessageToContentScript } from "./message.js";
+
 const updateStatus = (settingId: string, status: string) => {
   const element = document.querySelector<HTMLDivElement>(`#${settingId}`);
   element!.innerText = status;
@@ -29,7 +31,7 @@ const isProductListAvailable = async (): Promise<void> => {
 
   const availability =
     currentTab && currentTab.id
-      ? await browser.tabs.sendMessage(currentTab.id, {
+      ? await sendMessageToContentScript(currentTab.id, {
           data: "detectListing",
         })
       : false;

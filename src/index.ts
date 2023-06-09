@@ -1,13 +1,7 @@
 import { createButtons, findBooks, isProductListAvailable } from "./audible.js";
-import { AddonMessage, AddonResponse } from "./types.js";
+import { ContentMessage, sendMessageToBackgroundScript } from "./message.js";
 
 document.body.style.border = "5px solid red";
-
-const sendMessageToBackgroundScript = async <TMessage extends AddonMessage>(
-  message: TMessage
-): Promise<AddonResponse<TMessage>> => {
-  return browser.runtime.sendMessage(message);
-};
 
 const main = async () => {
   const bookElements = findBooks();
@@ -38,7 +32,7 @@ const main = async () => {
 };
 
 const initListener = () => {
-  browser.runtime.onMessage.addListener(async (message) => {
+  browser.runtime.onMessage.addListener(async (message: ContentMessage) => {
     console.log(`Message received: ${JSON.stringify(message)}`);
     if (message.data === "detectListing") {
       return isProductListAvailable();

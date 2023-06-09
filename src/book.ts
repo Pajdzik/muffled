@@ -3,6 +3,18 @@ export type Book = {
   title: string;
 };
 
+export type TitleAvailability = {
+  ebook: BookAvailability;
+  audiobook: BookAvailability;
+};
+
+export type BookAvailability = {
+  id: string;
+  availability: Availability;
+};
+
+export type Availability = "available" | "holdable" | "not available";
+
 export const encodeBookData = (book: Book) =>
   encodeURIComponent(flattenBookData(book));
 

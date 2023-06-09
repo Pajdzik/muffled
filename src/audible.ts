@@ -1,6 +1,11 @@
-import { Book, encodeBookData } from "./book.js";
+import {
+  Availability,
+  Book,
+  BookAvailability,
+  TitleAvailability,
+  encodeBookData,
+} from "./book.js";
 import { logDebug } from "./debug.js";
-import { Availability, BookAvailability, TitleAvailability } from "./types.js";
 
 export type BookComponent = {
   book: Book;
