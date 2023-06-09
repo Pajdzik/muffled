@@ -29,6 +29,11 @@ export const findBooks = (): BookComponent[] => {
   return bookComponents;
 };
 
+export const isProductListAvailable = (): boolean => {
+  const productList = findProductList();
+  return !!productList;
+};
+
 const findProductList = (): HTMLDivElement | undefined => {
   const productListElements = document.querySelectorAll<HTMLDivElement>(
     "div[data-widget='productList']"

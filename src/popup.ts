@@ -1,28 +1,30 @@
-import { isAudibleActive } from "./status.js";
+import { initStatus } from "./status.js";
 
-const activate = (id: string) => {
-  deativateAll();
+const activate = (id: string, initTab: () => void) => {
+  deactivateAll();
   const element = document.querySelector<HTMLDivElement>(`#${id}`);
   if (element) {
     element.style.display = "block";
+    initTab();
   }
 };
 
-const deativateAll = () => {
+const deactivateAll = () => {
   const tabContents = document.querySelectorAll<HTMLDivElement>(`.tab-content`);
   tabContents.forEach((tabContent) => {
     tabContent.style.display = "none";
   });
 };
 
-document.querySelectorAll("button").forEach((button) => {
-  const buttonId = button.id.slice(0, -"Button".length);
-  button.addEventListener("click", () => activate(buttonId));
-});
+const assignButtonHandler = (id: string, handler: () => void) => {
+  const button = document.querySelector<HTMLButtonElement>(`#${id}Button`);
+  button!.addEventListener("click", handler);
+};
 
-isAudibleActive().then((isAudibleActive) => {
-  const audibleStatus =
-    document.querySelector<HTMLDivElement>("#audibleStatus");
-  audibleStatus!.innerText = JSON.stringify(isAudibleActive, null, 2);
-  console.log(isAudibleActive);
-});
+const init = () => {
+  assignButtonHandler("status", () => activate("status", initStatus));
+  assignButtonHandler("settings", () => activate("settings", () => {}));
+  assignButtonHandler("logs", () => activate("logs", () => {}));
+};
+
+init();
