@@ -1,4 +1,4 @@
-import { createButtons, findBooks } from "./audible.js";
+import { createButtons, findBooks, isProductListAvailable } from "./audible.js";
 import { AddonMessage, AddonResponse } from "./types.js";
 
 document.body.style.border = "5px solid red";
@@ -37,4 +37,14 @@ const main = async () => {
   });
 };
 
+const initListener = () => {
+  browser.runtime.onMessage.addListener(async (message) => {
+    console.log(`Message received: ${JSON.stringify(message)}`);
+    if (message.data === "detectListing") {
+      return isProductListAvailable();
+    }
+  });
+};
+
+initListener();
 main();
