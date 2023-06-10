@@ -1,6 +1,6 @@
-import { queryLibrary } from "./overdrive.js";
 import { Book, TitleAvailability } from "./book.js";
 import { BackgroundMessage, addBackgroundListener } from "./message.js";
+import { queryLibrary } from "./overdriveBooks.js";
 
 const parseBook = async (book: Book): Promise<TitleAvailability> => {
   const response = queryLibrary("spl", book);
