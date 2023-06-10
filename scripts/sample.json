@@ -1,0 +1,3330 @@
+{
+  "totalItems": 9965,
+  "items": [
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 612,
+      "websiteId": 9,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 118, "green": 102, "red": 79 },
+          "hex": "#4f6676"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 41, "green": 161, "red": 246 },
+          "hex": "#f6a129"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/612?1521578359"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "librarySupportUrl": {
+          "href": "https://frontline.overdrive.com/?Lib=CLEVNET&edge=true&Key=clevnet"
+        },
+        "pinterest": {
+          "href": "https://www.pinterest.com/peninsulal/clevnet-libraries/"
+        },
+        "twitter": { "href": "https://twitter.com/clevnetlibs" }
+      },
+      "messages": [
+        {
+          "messageId": 545,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2340,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Magazines are Back! <a href=\"https://clevnet.overdrive.com/library/magazines\" target=\"_blank\">Click here to check out our new collection.</a>"
+        },
+        {
+          "messageId": 2349,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "CLEVNET",
+      "fulfillmentId": "clevnet",
+      "visitorKey": "clevnet-visitor",
+      "preferredKey": "clevnet",
+      "id": "clevnet"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 633,
+      "websiteId": 49,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 70, "green": 76, "red": 93 },
+          "hex": "#5d4c46"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 194, "green": 179, "red": 68 },
+          "hex": "#44b3c2"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/633?1499097652"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "librarySupportUrl": {
+          "href": "https://frontline.overdrive.com/?Lib=Digital+Downloads+Collaboration&edge=true&Key=clc"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 266,
+          "settings": { "sampleSiteOnly": false },
+          "message": "See what other Ohio customers are <a href=\"https://insights.overdrive.com/dashboards/f91824ef88a0435fb4eb3ca0960f5764\" target=\"_blank\">reading</a>."
+        },
+        {
+          "messageId": 836,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2350,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Digital Downloads Collaboration",
+      "fulfillmentId": "clc",
+      "visitorKey": "clc-visitor",
+      "preferredKey": "clc",
+      "id": "clc"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 635,
+      "websiteId": 22,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 37, "green": 147, "red": 55 },
+          "hex": "#379325"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 51, "green": 51, "red": 51 },
+          "hex": "#333333"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/635.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.sjpl.org" },
+        "cardAcquisitionUrl": { "href": "http://www.sjpl.org/librarycard" },
+        "librarySupportUrl": { "href": "http://www.sjpl.org/emediasupport" },
+        "facebook": { "href": "http://facebook.com/sanjoselibrary" },
+        "pinterest": { "href": "http://pinterest.com/sanjoselibrary" },
+        "twitter": { "href": "http://twitter.com/sanjoselibrary" },
+        "youTube": { "href": "http://www.youtube.com/user/sjplvideo" }
+      },
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "San Jose Public Library",
+      "fulfillmentId": "sanjose",
+      "visitorKey": "sanjose-visitor",
+      "preferredKey": "sanjose",
+      "id": "sanjose"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 636,
+      "websiteId": 45,
+      "accounts": [-1],
+      "settings": { "cookieSetting": "Never" },
+      "links": { "librarySupportEmail": { "href": "info@librisite.com" } },
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Terminated",
+      "name": "Librisite",
+      "fulfillmentId": "librisite",
+      "visitorKey": "librisite-visitor",
+      "preferredKey": "librisite",
+      "id": "librisite"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 651,
+      "websiteId": 13,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 68, "green": 15, "red": 208 },
+          "hex": "#d00f44"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 182, "green": 149, "red": 39 },
+          "hex": "#2795b6"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/651.png?1"
+        },
+        "cookieSetting": "Always"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.essex.gov.uk/Pages/Default.aspx" },
+        "cardAcquisitionUrl": {
+          "href": "http://www.essex.gov.uk/Libraries-Archives/Libraries/Pages/Join-the-library.aspx"
+        },
+        "librarySupportEmail": { "href": "information.enquiry@essex.gov.uk" },
+        "facebook": { "href": "https://www.facebook.com/EssexLibraries" },
+        "twitter": { "href": "https://twitter.com/EssexLibraries" }
+      },
+      "messages": [
+        {
+          "messageId": 184,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Regrettably Essex Libraries will no longer be subscribing to the OverDrive service after 31st March 2017. For help or more information please visit the <a href=\"http://libraries.essex.gov.uk/e-books-e-audio-e-magazines-and-book-groups/e-books-and-e-audio/\">Essex Libraries’ website.</a>"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 646,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Terminated",
+      "name": "Essex County Council",
+      "fulfillmentId": "essex",
+      "visitorKey": "essex-visitor",
+      "preferredKey": "essex",
+      "id": "essex"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 652,
+      "websiteId": 12,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 53, "green": 53, "red": 53 },
+          "hex": "#353535"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 158, "green": 114, "red": 2 },
+          "hex": "#02729e"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/652?1484255070"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://kcls.org/" },
+        "cardAcquisitionUrl": { "href": "https://kcls.org/library-cards/" },
+        "librarySupportUrl": { "href": "https://kcls.org/ask/" },
+        "facebook": {
+          "href": "https://www.facebook.com/kingcountylibrarysystem?fref=photo"
+        },
+        "twitter": { "href": "https://twitter.com/KCLS" },
+        "youTube": { "href": "https://www.youtube.com/user/kingcountylibrary" }
+      },
+      "messages": [
+        {
+          "messageId": 13833,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Signing in using a mobile number creates a separate and temporary OverDrive account. To keep your holds on one account, sign in with your library card number."
+        },
+        {
+          "messageId": 15208,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Switch to Libby!</a> The OverDrive app has been discontinued. For uninterrupted reading on mobile devices, install the Libby app now."
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "King County Library System",
+      "fulfillmentId": "kingcounty",
+      "visitorKey": "kcls-visitor",
+      "preferredKey": "kcls",
+      "id": "kcls"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 660,
+      "websiteId": 76,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 97, "green": 47, "red": 30 },
+          "hex": "#1e2f61"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 34, "green": 21, "red": 122 },
+          "hex": "#7a1522"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/660.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {},
+      "messages": [
+        {
+          "messageId": 646,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2352,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        },
+        {
+          "messageId": 3607,
+          "settings": { "sampleSiteOnly": false },
+          "message": "OverDrive has restored the download option for MP3 audiobooks for users running macOS 10.6 (Snow Leopard) through 10.14 (Mojave), but not the most recent update, Catalina. For more information about this change, please <a href=\" https://company.overdrive.com/2019/09/25/important-update-on-the-overdrive-desktop-app-for-mac/\" target=\"_blank\">read</a>"
+        },
+        {
+          "messageId": 11809,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Maxed out your checkouts? <a href=\"https://help.overdrive.com/en-us/2065.html#thundercontent\">Return them early</a>!"
+        },
+        {
+          "messageId": 13433,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Finished your book? You can return it early! <a href=\"https://help.overdrive.com/customer/en/portal/articles/1481263-how-to-return-titles-to-your-library?b_id=15211\">Click here to find out how.</a>"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "The Ohio Digital Library",
+      "fulfillmentId": "stateofohio",
+      "visitorKey": "ohdbks-visitor",
+      "preferredKey": "ohdbks",
+      "id": "ohdbks"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 669,
+      "websiteId": 80,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 118, "green": 82, "red": 0 },
+          "hex": "#005276"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 30, "green": 124, "red": 209 },
+          "hex": "#d17c1e"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/669.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.wplc.info/forpatrons" },
+        "librarySupportUrl": {
+          "href": "http://www.wplc.info/wplc-overdrive-support-request"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 613,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2353,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Wisconsin Public Library Consortium",
+      "fulfillmentId": "wisconsin",
+      "visitorKey": "wplc-visitor",
+      "preferredKey": "wplc",
+      "id": "wplc"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 671,
+      "websiteId": 15,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 183, "green": 108, "red": 10 },
+          "hex": "#0a6cb7"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 12, "green": 119, "red": 227 },
+          "hex": "#e3770c"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/671.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.libraryvisit.org" },
+        "cardAcquisitionUrl": {
+          "href": "http://www.libraryvisit.org/our-happenings/library-card-services/"
+        },
+        "librarySupportUrl": {
+          "href": "https://www.libraryvisit.org/digital-library-support/"
+        },
+        "facebook": {
+          "href": "https://www.facebook.com/librarymahoningcounty"
+        },
+        "twitter": { "href": "https://twitter.com/PLYMC" },
+        "youTube": { "href": "https://www.youtube.com/user/PLYMC" }
+      },
+      "messages": [
+        {
+          "messageId": 547,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2601,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "The Public Library of Youngstown and Mahoning County",
+      "fulfillmentId": "youngstown",
+      "visitorKey": "youngstown-visitor",
+      "preferredKey": "youngstown",
+      "id": "youngstown"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 673,
+      "websiteId": 31,
+      "accounts": [-1],
+      "settings": { "cookieSetting": "Never" },
+      "links": {},
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["dlr"],
+      "visitableLibraries": [],
+      "mergedWebsiteId": 76,
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "mergedLibraryKey": "ohdbks",
+      "type": "DLR",
+      "status": "Merged",
+      "name": "SEO Library Center",
+      "fulfillmentId": "seo-library",
+      "visitorKey": "seo-library-visitor",
+      "preferredKey": "seo-library",
+      "id": "seo-library"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 676,
+      "websiteId": 43,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 171, "green": 129, "red": 84 },
+          "hex": "#5481ab"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 35, "green": 163, "red": 191 },
+          "hex": "#bfa323"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/676.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.fergusonlibrary.org" },
+        "cardAcquisitionUrl": {
+          "href": "http://fergusonlibrary.org/services/getting-using-your-library-card/"
+        },
+        "librarySupportEmail": { "href": "comments@fergusonlibrary.org" }
+      },
+      "messages": [
+        {
+          "messageId": 833,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2354,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "The Ferguson Library",
+      "fulfillmentId": "stamford",
+      "visitorKey": "stamford-visitor",
+      "preferredKey": "stamford",
+      "id": "stamford"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 702,
+      "websiteId": 17,
+      "accounts": [-1],
+      "settings": { "cookieSetting": "Never" },
+      "links": {
+        "librarySupportEmail": { "href": "starkvillelibrary@yahoo.com" }
+      },
+      "messages": [
+        {
+          "messageId": 623,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["dlr"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Terminated",
+      "name": "Starkville Public Library",
+      "fulfillmentId": "starkville",
+      "visitorKey": "starkville-visitor",
+      "preferredKey": "starkville",
+      "id": "starkville"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 707,
+      "websiteId": 16,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 78, "green": 78, "red": 78 },
+          "hex": "#4e4e4e"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 45, "green": 185, "red": 156 },
+          "hex": "#9cb92d"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/707?1635195093"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.bcls.lib.nj.us" },
+        "cardAcquisitionUrl": {
+          "href": "https://bcls.polarislibrary.com/polaris/patronaccount/selfregister.aspx"
+        },
+        "librarySupportUrl": {
+          "href": "http://www.bcls.lib.nj.us/ebook-technical-support"
+        },
+        "facebook": {
+          "href": "https://www.facebook.com/burlingtoncountylibrary"
+        },
+        "twitter": { "href": "https://twitter.com/askbcls" },
+        "youTube": { "href": "https://www.youtube.com/user/askbcls" }
+      },
+      "messages": [
+        {
+          "messageId": 548,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2355,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Burlington County Library System",
+      "fulfillmentId": "burlington",
+      "visitorKey": "burlington-visitor",
+      "preferredKey": "burlington",
+      "id": "burlington"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 712,
+      "websiteId": 178,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 0, "green": 117, "red": 221 },
+          "hex": "#dd7500"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 0, "green": 0, "red": 0 },
+          "hex": "#000000"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/712?1623861258"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.evpl.org" },
+        "cardAcquisitionUrl": {
+          "href": "https://www.evpl.org/services/library-card/"
+        },
+        "librarySupportUrl": {
+          "href": "https://www.evpl.org/connect/contact-us/"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 686,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2356,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["ja", "ja-JP"],
+          "defaultLanguageCode": "ja",
+          "nativeDisplayName": "日本語",
+          "displayName": "Japanese"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Evansville Vanderburgh Public Library",
+      "fulfillmentId": "evansville",
+      "visitorKey": "evpl-visitor",
+      "preferredKey": "evpl",
+      "id": "evpl"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": true,
+      "accessId": 721,
+      "websiteId": 21,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 204, "green": 51, "red": 0 },
+          "hex": "#0033cc"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 0, "green": 127, "red": 159 },
+          "hex": "#9f7f00"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/721.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {},
+      "messages": [
+        {
+          "messageId": 624,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2602,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Metro Net Library Consortium",
+      "fulfillmentId": "metronet",
+      "visitorKey": "metronet-visitor",
+      "preferredKey": "metronet",
+      "id": "metronet"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 735,
+      "websiteId": 85,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 175, "green": 141, "red": 82 },
+          "hex": "#528daf"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 131, "green": 191, "red": 141 },
+          "hex": "#8dbf83"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/735?1536767868"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.fairfaxcounty.gov/library" },
+        "librarySupportUrl": {
+          "href": "https://frontline.overdrive.com/?Lib=Fairfax+County+Public+Library&edge=true&Key=fairfax"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 720,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2357,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Fairfax County Public Library",
+      "fulfillmentId": "fairfax",
+      "visitorKey": "fairfax-visitor",
+      "preferredKey": "fairfax",
+      "id": "fairfax"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": true,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": false,
+      "accessId": 742,
+      "websiteId": 28,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 90, "green": 30, "red": 35 },
+          "hex": "#231e5a"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 230, "green": 175, "red": 0 },
+          "hex": "#00afe6"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/742?1643226680"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.cuyahogalibrary.org" },
+        "cardAcquisitionUrl": {
+          "href": "https://cuyahogalibrary.org/get-a-ccpl-card"
+        },
+        "librarySupportUrl": {
+          "href": "https://frontline.overdrive.com/?Lib=Cuyahoga+County+Public+Library&edge=true&Key=ccpl"
+        },
+        "facebook": { "href": "https://www.facebook.com/CuyahogaLib" },
+        "pinterest": { "href": "https://www.pinterest.com/cuyahogalibrary/" },
+        "twitter": { "href": "https://twitter.com/CuyahogaLib" }
+      },
+      "messages": [
+        {
+          "messageId": 3288,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        },
+        {
+          "messageId": 3385,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["fr-CA", "fr"],
+          "defaultLanguageCode": "fr-CA",
+          "nativeDisplayName": "Français (Canada)",
+          "displayName": "French (Canadian)"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["zh-Hant", "zh-HK", "zh-MO", "zh-TW"],
+          "defaultLanguageCode": "zh-Hant",
+          "nativeDisplayName": "中文(繁體)",
+          "displayName": "Chinese (Traditional)"
+        },
+        {
+          "languageCodes": ["ja", "ja-JP"],
+          "defaultLanguageCode": "ja",
+          "nativeDisplayName": "日本語",
+          "displayName": "Japanese"
+        },
+        {
+          "languageCodes": ["ms", "ms-BN", "ms-MY"],
+          "defaultLanguageCode": "ms",
+          "nativeDisplayName": "Bahasa Melayu",
+          "displayName": "Malay"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        },
+        {
+          "languageCodes": ["sv", "sv-FI", "sv-SE"],
+          "defaultLanguageCode": "sv",
+          "nativeDisplayName": "Svenska",
+          "displayName": "Swedish"
+        },
+        {
+          "languageCodes": ["fi", "fi-FI"],
+          "defaultLanguageCode": "fi",
+          "nativeDisplayName": "Suomi",
+          "displayName": "Finnish"
+        },
+        {
+          "languageCodes": ["it", "it-CH", "it-IT"],
+          "defaultLanguageCode": "it",
+          "nativeDisplayName": "Italiano",
+          "displayName": "Italian"
+        },
+        {
+          "languageCodes": ["de", "de-AT", "de-CH", "de-DE", "de-LI", "de-LU"],
+          "defaultLanguageCode": "de",
+          "nativeDisplayName": "Deutsch",
+          "displayName": "German"
+        },
+        {
+          "languageCodes": ["da", "da-DK"],
+          "defaultLanguageCode": "da",
+          "nativeDisplayName": "Dansk",
+          "displayName": "Danish"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Cuyahoga County Public Library",
+      "fulfillmentId": "cuyahogacounty",
+      "visitorKey": "ccpl-visitor",
+      "preferredKey": "ccpl",
+      "id": "ccpl"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 746,
+      "websiteId": 29,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 162, "green": 124, "red": 87 },
+          "hex": "#577ca2"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 68, "green": 68, "red": 68 },
+          "hex": "#444444"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/746?1650485280"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://denverlibrary.org" },
+        "librarySupportUrl": {
+          "href": "https://survey.alchemer.com/s3/7141247/Libby-Support-Form"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 627,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2359,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        },
+        {
+          "messageId": 15216,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Check out <a href=\"https://libbyapp.com/library/denver/extras\" target=\"_blank\">Libby Extras</a> to explore more of the content Denver Public Library has to offer!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Denver Public Library",
+      "fulfillmentId": "denver",
+      "visitorKey": "denver-visitor",
+      "preferredKey": "denver",
+      "id": "denver"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 751,
+      "websiteId": 36,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 110, "green": 50, "red": 0 },
+          "hex": "#00326e"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 95, "green": 107, "red": 48 },
+          "hex": "#306b5f"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/751.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {},
+      "messages": [
+        {
+          "messageId": 648,
+          "settings": { "sampleSiteOnly": false },
+          "message": "We offer eBooks for your Kindle device or reading app. Try one today!"
+        },
+        {
+          "messageId": 2360,
+          "settings": { "sampleSiteOnly": false },
+          "message": "<a href=\"https://meet.libbyapp.com/?utm_origin=lightning&utm_page_genre=toast_note&utm_list=meet_libby&utm_content=libby_sitemessage_05012018\" target=\"_blank\">Try Libby</a>, our new app for enjoying ebooks and audiobooks!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["zh-Hant", "zh-HK", "zh-MO", "zh-TW"],
+          "defaultLanguageCode": "zh-Hant",
+          "nativeDisplayName": "中文(繁體)",
+          "displayName": "Chinese (Traditional)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "North Suburban Digital Consortium",
+      "fulfillmentId": "parkridge",
+      "visitorKey": "nsdc-visitor",
+      "preferredKey": "nsdc",
+      "id": "nsdc"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": true,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 814,
+      "websiteId": 33,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 127, "green": 127, "red": 127 },
+          "hex": "#7f7f7f"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 140, "green": 94, "red": 38 },
+          "hex": "#265e8c"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/814?1680708480"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "librarySupportUrl": {
+          "href": "https://frontline.overdrive.com/?Lib=Las+Vegas-Clark+County+Library+District&edge=true&Key=lasvegas"
+        }
+      },
+      "messages": [
+        {
+          "messageId": 3467,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Check out our new magazines <a href=\"https://lasvegas.overdrive.com/library/magazines\" target=\"_blank\">here</a>!"
+        },
+        {
+          "messageId": 13592,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Help shorten wait times. Finished it?  <a href=\"https://help.libbyapp.com/en-us/6033.htm\" target=\"_blank\">Return it! </a>"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [220],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Las Vegas-Clark County Library District",
+      "fulfillmentId": "lasvegas",
+      "visitorKey": "lasvegas-visitor",
+      "preferredKey": "lasvegas",
+      "id": "lasvegas"
+    },
+    {
+      "recommendToLibraryEnabled": true,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": true,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": true,
+      "isConsortium": true,
+      "accessId": 819,
+      "websiteId": 34,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 36, "green": 4, "red": 146 },
+          "hex": "#920424"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 3, "green": 129, "red": 213 },
+          "hex": "#d58103"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/819.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {},
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["ja", "ja-JP"],
+          "defaultLanguageCode": "ja",
+          "nativeDisplayName": "日本語",
+          "displayName": "Japanese"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Greater Phoenix Digital Library",
+      "fulfillmentId": "phoenix",
+      "visitorKey": "phoenix-visitor",
+      "preferredKey": "phoenix",
+      "id": "phoenix"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 821,
+      "websiteId": 41,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 0, "green": 0, "red": 153 },
+          "hex": "#990000"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 0, "green": 0, "red": 0 },
+          "hex": "#000000"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/821.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "http://www.whiteplainslibrary.org" },
+        "librarySupportUrl": {
+          "href": "http://whiteplainslibrary.org/ebook-support/"
+        }
+      },
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        }
+      ],
+      "enabledPlatforms": ["dlr"],
+      "visitableLibraries": [],
+      "mergedWebsiteId": 219,
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "mergedLibraryKey": "westchester",
+      "type": "DLR",
+      "status": "Merged",
+      "name": "White Plains Public Library",
+      "fulfillmentId": "whiteplains",
+      "visitorKey": "whiteplains-old-visitor",
+      "preferredKey": "whiteplains-old",
+      "id": "whiteplains-old"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": false,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": true,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": true,
+      "accessId": 822,
+      "websiteId": 71,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 3, "green": 3, "red": 76 },
+          "hex": "#4c0303"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 48, "green": 48, "red": 48 },
+          "hex": "#303030"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logos/crushed/822.png?1"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {},
+      "messages": [
+        {
+          "messageId": 13917,
+          "settings": { "sampleSiteOnly": false },
+          "message": "Your library is moving to <a href=\"https://idl.overdrive.com/\"> Indiana Digital Library.</a> We are currently transferring content to the new site, and some material may be unavailable during this time. Thanks for your patience!"
+        }
+      ],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "mergedWebsiteId": 130126,
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "mergedLibraryKey": "idl",
+      "type": "DLR",
+      "status": "Merged",
+      "name": "Indiana Digital Media",
+      "fulfillmentId": "incolsa",
+      "visitorKey": "idm-visitor",
+      "preferredKey": "idm",
+      "id": "idm"
+    },
+    {
+      "recommendToLibraryEnabled": false,
+      "lastModifiedDate": "2023-06-09T04:50:41.4005643Z",
+      "allowAnonymousSampling": true,
+      "allowDeepSearch": true,
+      "isDemo": false,
+      "areLuckyDayTitlesAllocated": false,
+      "canAddLibrariesInSora": true,
+      "isLuckyDayEnabled": false,
+      "isLexisNexis": false,
+      "isAuroraEnabled": false,
+      "isInstantAccessEnabled": false,
+      "hasAdvantageAccounts": false,
+      "isAutocompleteEnabled": true,
+      "allowRecommendToLibrary": false,
+      "isConsortium": false,
+      "accessId": 830,
+      "websiteId": 39,
+      "accounts": [-1],
+      "settings": {
+        "primaryColor": {
+          "rgb": { "blue": 80, "green": 32, "red": 0 },
+          "hex": "#002050"
+        },
+        "secondaryColor": {
+          "rgb": { "blue": 215, "green": 120, "red": 0 },
+          "hex": "#0078d7"
+        },
+        "logo140X60": {
+          "href": "https://thunder.cdn.overdrive.com/logo-resized/830?1503515859"
+        },
+        "cookieSetting": "Never"
+      },
+      "links": {
+        "libraryHome": { "href": "https://aka.ms/mslibrary" },
+        "librarySupportEmail": { "href": "library@microsoft.com" }
+      },
+      "messages": [],
+      "defaultLanguage": {
+        "languageCodes": [
+          "en",
+          "en-029",
+          "en-AU",
+          "en-BZ",
+          "en-CA",
+          "en-GB",
+          "en-IE",
+          "en-IN",
+          "en-JM",
+          "en-MY",
+          "en-NZ",
+          "en-PH",
+          "en-SG",
+          "en-TT",
+          "en-US",
+          "en-ZA",
+          "en-ZW"
+        ],
+        "defaultLanguageCode": "en",
+        "nativeDisplayName": "English",
+        "displayName": "English"
+      },
+      "supportedLanguages": [
+        {
+          "languageCodes": [
+            "en",
+            "en-029",
+            "en-AU",
+            "en-BZ",
+            "en-CA",
+            "en-GB",
+            "en-IE",
+            "en-IN",
+            "en-JM",
+            "en-MY",
+            "en-NZ",
+            "en-PH",
+            "en-SG",
+            "en-TT",
+            "en-US",
+            "en-ZA",
+            "en-ZW"
+          ],
+          "defaultLanguageCode": "en",
+          "nativeDisplayName": "English",
+          "displayName": "English"
+        },
+        {
+          "languageCodes": [
+            "es",
+            "es-AR",
+            "es-BO",
+            "es-CL",
+            "es-CO",
+            "es-CR",
+            "es-DO",
+            "es-EC",
+            "es-ES",
+            "es-GT",
+            "es-HN",
+            "es-MX",
+            "es-NI",
+            "es-PA",
+            "es-PE",
+            "es-PR",
+            "es-PY",
+            "es-SV",
+            "es-US",
+            "es-UY",
+            "es-VE"
+          ],
+          "defaultLanguageCode": "es",
+          "nativeDisplayName": "Español",
+          "displayName": "Spanish"
+        },
+        {
+          "languageCodes": ["fr-CA", "fr"],
+          "defaultLanguageCode": "fr-CA",
+          "nativeDisplayName": "Français (Canada)",
+          "displayName": "French (Canadian)"
+        },
+        {
+          "languageCodes": ["zh-CN", "zh-Hans", "zh-SG", "zh"],
+          "defaultLanguageCode": "zh-Hans",
+          "nativeDisplayName": "中文(简体)",
+          "displayName": "Chinese (Simplified)"
+        },
+        {
+          "languageCodes": ["zh-Hant", "zh-HK", "zh-MO", "zh-TW"],
+          "defaultLanguageCode": "zh-Hant",
+          "nativeDisplayName": "中文(繁體)",
+          "displayName": "Chinese (Traditional)"
+        },
+        {
+          "languageCodes": ["ja", "ja-JP"],
+          "defaultLanguageCode": "ja",
+          "nativeDisplayName": "日本語",
+          "displayName": "Japanese"
+        },
+        {
+          "languageCodes": ["ru", "ru-RU"],
+          "defaultLanguageCode": "ru",
+          "nativeDisplayName": "Русский",
+          "displayName": "Russian"
+        },
+        {
+          "languageCodes": ["sv", "sv-FI", "sv-SE"],
+          "defaultLanguageCode": "sv",
+          "nativeDisplayName": "Svenska",
+          "displayName": "Swedish"
+        },
+        {
+          "languageCodes": ["it", "it-CH", "it-IT"],
+          "defaultLanguageCode": "it",
+          "nativeDisplayName": "Italiano",
+          "displayName": "Italian"
+        },
+        {
+          "languageCodes": ["de", "de-AT", "de-CH", "de-DE", "de-LI", "de-LU"],
+          "defaultLanguageCode": "de",
+          "nativeDisplayName": "Deutsch",
+          "displayName": "German"
+        },
+        {
+          "languageCodes": [
+            "ar",
+            "ar-AE",
+            "ar-BH",
+            "ar-DZ",
+            "ar-EG",
+            "ar-IQ",
+            "ar-JO",
+            "ar-KW",
+            "ar-LB",
+            "ar-LY",
+            "ar-MA",
+            "ar-OM",
+            "ar-QA",
+            "ar-SA",
+            "ar-SY",
+            "ar-TN",
+            "ar-YE"
+          ],
+          "defaultLanguageCode": "ar",
+          "nativeDisplayName": "العربية",
+          "displayName": "Arabic"
+        }
+      ],
+      "enabledPlatforms": ["lightning", "libby"],
+      "visitableLibraries": [],
+      "parentCRAccessId": 533,
+      "showcaseTarget": "default",
+      "type": "DLR",
+      "status": "Live",
+      "name": "Microsoft Library",
+      "fulfillmentId": "mslibrary",
+      "visitorKey": "msl-visitor",
+      "preferredKey": "msl",
+      "id": "msl"
+    }
+  ],
+  "links": {
+    "self": { "page": 1, "pageText": "1" },
+    "first": { "page": 1, "pageText": "1" },
+    "last": { "page": 416, "pageText": "416" },
+    "next": { "page": 2, "pageText": "2" }
+  },
+  "totalItemsText": "9,965"
+}
