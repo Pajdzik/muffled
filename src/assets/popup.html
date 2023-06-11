@@ -39,14 +39,33 @@
     </div>
 
     <div id="settings" class="tab-content">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p>
+      <div class="settings-row">
+        <div class="settings-label">Library</div>
+        <div class="settings-value" id="librarySetup">
+          <button id="dropdownButton">Dropdown</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input
+              type="text"
+              placeholder="Search.."
+              id="myInput"
+              onkeyup="filterFunction()"
+            />
+            <a href="#about">About</a>
+            <a href="#base">Base</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+            <a href="#custom">Custom</a>
+            <a href="#support">Support</a>
+            <a href="#tools">Tools</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="logs" class="tab-content">
       <h3>Tokyo</h3>
       <p>Tokyo is the capital of Japan.</p>
     </div>
-    <script src="popup.js"></script>
+    <script src="../popup.js"></script>
   </body>
 </html>

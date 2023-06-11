@@ -19,8 +19,8 @@
     "bundle-index": "esbuild ./src/index.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/index.js --format=esm",
     "bundle-popup": "esbuild ./src/popup.ts --bundle --sourcemap --target=firefox100 --outfile=./dist/popup.js --format=iife",
     "bundle": "yarn copy-manifest && yarn bundle-background && yarn bundle-index && yarn bundle-popup",
-    "copy-assets": "yarn copy-manifest && cp assets/* dist",
-    "copy-assets-watch": "nodemon --watch assets --ext css,html,png --exec 'yarn copy-assets'",
+    "copy-assets": "yarn copy-manifest && cp -r ./src/assets dist",
+    "copy-assets-watch": "nodemon --watch ./src/assets --ext css,html,png,json --exec 'yarn copy-assets'",
     "copy-manifest": "cp manifest.json dist/manifest.json",
     "copy-manifest-watch": "nodemon --watch manifest.json --exec 'yarn copy-manifest'"
   },

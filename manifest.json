@@ -17,10 +17,10 @@
   "host_permissions": ["*://*.audible.com/*"],
   "action": {
     "default_icon": {
-      "32": "icon.png",
-      "64": "icon.png"
+      "32": "./assets/icon.png",
+      "64": "./assets/icon.png"
     },
     "default_title": "Aulible",
-    "default_popup": "popup.html"
+    "default_popup": "./assets/popup.html"
   }
 }
