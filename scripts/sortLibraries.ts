@@ -19,7 +19,7 @@ const main = async () => {
     "../assets/libraries.json"
   );
   const sortedLibraries = libraries.sort(sortLibrary);
-  await writeLibraryDataFile("../assets/libraries2.json", sortedLibraries);
+  await writeLibraryDataFile("../assets/libraries.json", sortedLibraries);
 };
 
 await main();
