@@ -1,3 +1,4 @@
+import { initSettings } from "./settings.js";
 import { initStatus } from "./status.js";
 
 const activate = (id: string, initTab: () => void) => {
@@ -23,8 +24,10 @@ const assignButtonHandler = (id: string, handler: () => void) => {
 
 const init = () => {
   assignButtonHandler("status", () => activate("status", initStatus));
-  assignButtonHandler("settings", () => activate("settings", () => {}));
+  assignButtonHandler("settings", () => activate("settings", initSettings));
   assignButtonHandler("logs", () => activate("logs", () => {}));
+
+  activate("settings", initSettings);
 };
 
 init();

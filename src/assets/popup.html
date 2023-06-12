@@ -14,25 +14,25 @@
     </div>
 
     <!-- Tab content -->
-    <div id="status" class="tab-content" style="display: block">
+    <div id="status" class="tab-content">
       <div class="settings-container">
         <div class="settings-row">
-          <div class="settings-label">Audible detected</div>
+          <div class="label">Audible detected</div>
           <div class="settings-value" id="audibleDetected">...</div>
         </div>
 
         <div class="settings-row">
-          <div class="settings-label">Listing detected</div>
+          <div class="label">Listing detected</div>
           <div class="settings-value" id="listingDetected">...</div>
         </div>
 
         <div class="settings-row">
-          <div class="settings-label">Library set up</div>
+          <div class="label">Library set up</div>
           <div class="settings-value" id="librarySetup">...</div>
         </div>
 
         <div class="settings-row">
-          <div class="settings-label">Overdrive API</div>
+          <div class="label">Overdrive API</div>
           <div class="settings-value" id="overdriveApiStatus">...</div>
         </div>
       </div>
@@ -40,26 +40,14 @@
 
     <div id="settings" class="tab-content">
       <div class="settings-row">
-        <div class="settings-label">Library</div>
-        <div class="settings-value" id="librarySetup">
-          <button id="dropdownButton">Dropdown</button>
-          <div id="myDropdown" class="dropdown-content">
-            <input
-              type="text"
-              placeholder="Search.."
-              id="myInput"
-              onkeyup="filterFunction()"
-            />
-            <a href="#about">About</a>
-            <a href="#base">Base</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-            <a href="#custom">Custom</a>
-            <a href="#support">Support</a>
-            <a href="#tools">Tools</a>
+        <div class="label">Library</div>
+        <div class="library-setup ">
+          <div id="filterContainer">
+            <input type="search" id="libraryFilter" placeholder="Filter..." />
+            <button id="clearFilterButton">✖️</button>
           </div>
+          <select id="librarySelect"></select>
         </div>
-      </div>
     </div>
 
     <div id="logs" class="tab-content">

@@ -1,4 +1,7 @@
-/* Style the tab */
+body {
+  max-width: 400px;
+}
+
 .tab {
   display: flex;
   align-items: stretch;
@@ -42,9 +45,46 @@
   flex-direction: column;
 }
 
-.settings-container > div {
-  flex: 1;
+.settings-row {
   display: flex;
   flex-direction: row;
-  align-content: space-around;
+  flex-wrap: nowrap;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.settings-row > div {
+  display: flex;
+}
+
+.label {
+  margin-right: 0;
+}
+
+.settings-value {
+  justify-content: end;
+}
+
+.library-setup {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.library-setup > select {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#filterContainer {
+  display: flex;
+}
+
+#filterContainer > input {
+  flex: 11;
+}
+
+#filterContainer > button {
+  flex: 1;
 }
