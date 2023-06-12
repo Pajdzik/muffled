@@ -13,7 +13,7 @@
     "scripts": ["background.js"],
     "type": "module"
   },
-  "permissions": ["webRequest"],
+  "permissions": ["webRequest", "storage"],
   "host_permissions": ["*://*.audible.com/*"],
   "action": {
     "default_icon": {
@@ -22,5 +22,11 @@
     },
     "default_title": "Aulible",
     "default_popup": "./assets/popup.html"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{aab99515-41dc-4b6b-9993-5e6301c63484}",
+      "strict_min_version": "80.0"
+    }
   }
 }
