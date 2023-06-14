@@ -6,11 +6,11 @@
   "content_scripts": [
     {
       "matches": ["*://audible.com/*", "*://*.audible.com/*"],
-      "js": ["index.js"]
+      "js": ["./src/index.js"]
     }
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["./src/background.js"],
     "type": "module"
   },
   "permissions": ["webRequest", "storage"],
@@ -22,7 +22,7 @@
       "96": "./assets/icon.svg"
     },
     "default_title": "Aulible",
-    "default_popup": "./assets/popup.html"
+    "default_popup": "./src/popup.html"
   },
   "browser_specific_settings": {
     "gecko": {

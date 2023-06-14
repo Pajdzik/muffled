@@ -17,12 +17,15 @@
     "web-ext": "^7.6.2"
   },
   "scripts": {
-    "bundle-background": "esbuild ./src/background.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/background.js --format=esm",
-    "bundle-index": "esbuild ./src/index.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/index.js --format=esm",
-    "bundle-popup": "esbuild ./src/popup.ts --bundle --sourcemap --target=firefox100 --outfile=./dist/popup.js --format=iife",
-    "bundle": "yarn copy-manifest && yarn bundle-background && yarn bundle-index && yarn bundle-popup",
-    "copy-assets": "yarn copy-manifest && cp -r ./src/assets dist",
+    "bundle-background": "esbuild ./src/background.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/src/background.js --format=esm",
+    "bundle-index": "esbuild ./src/index.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/src/index.js --format=esm",
+    "bundle-popup": "esbuild ./src/popup.ts --bundle --sourcemap --target=firefox100 --outfile=./dist/src/popup.js --format=iife",
+    "bundle": "mkdir -p dist/src && yarn copy-static && yarn bundle-background && yarn bundle-index && yarn bundle-popup",
+    "copy-static": "yarn copy-assets && yarn copy-popup-ui && yarn copy-manifest",
+    "copy-assets": "cp -r ./src/assets dist",
     "copy-assets-watch": "nodemon --watch ./src/assets --ext css,html,png,json,svg --exec 'yarn copy-assets'",
+    "copy-popup-ui": "cp ./src/popup.{css,html} dist/src/",
+    "copy-popup-ui-watch": "nodemon --watch ./src/popup.{css,html} --exec 'yarn copy-popup-ui'",
     "copy-manifest": "cp manifest.json dist/manifest.json",
     "copy-manifest-watch": "nodemon --watch manifest.json --exec 'yarn copy-manifest'"
   },
