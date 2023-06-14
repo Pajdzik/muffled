@@ -12,7 +12,7 @@
     "@types/node": "^20.2.5",
     "esbuild": "^0.17.18",
     "nodemon": "^2.0.22",
-    "typescript": "^5.0.4"
+    "prettier": "^2.8.8",
   },
   "scripts": {
     "bundle-background": "esbuild ./src/background.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/background.js --format=esm",
