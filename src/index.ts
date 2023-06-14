@@ -12,22 +12,15 @@ const main = async () => {
       book: bookElement.book,
     });
 
-    console.log(
-      `Availability of ${bookElement.book.title} is ${JSON.stringify(
-        bookAvailability
-      )}`
-    );
+    console.log(`Availability of ${bookElement.book.title} is ${JSON.stringify(bookAvailability)}`);
 
-    const buttonContainer =
-      bookElement.element.querySelector("#adbl-buy-box-area");
-    const [audiobookButton, ebookButton] = createButtons(
-      bookElement.book,
-      bookAvailability,
-      "spl"
-    );
+    if (bookAvailability) {
+      const buttonContainer = bookElement.element.querySelector("#adbl-buy-box-area");
+      const [audiobookButton, ebookButton] = createButtons(bookElement.book, bookAvailability, "spl");
 
-    buttonContainer?.appendChild(audiobookButton);
-    buttonContainer?.appendChild(ebookButton);
+      buttonContainer?.appendChild(audiobookButton);
+      buttonContainer?.appendChild(ebookButton);
+    }
   });
 };
 

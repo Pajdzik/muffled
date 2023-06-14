@@ -7,8 +7,9 @@ export type BackgroundMessage =
     }
   | never;
 
-export type BackgroundResponse<TMessage extends BackgroundMessage> =
-  TMessage extends BackgroundMessage ? TitleAvailability : never;
+export type BackgroundResponse<TMessage extends BackgroundMessage> = TMessage extends BackgroundMessage
+  ? TitleAvailability | undefined
+  : never;
 
 export type ContentMessage =
   | {
@@ -16,16 +17,11 @@ export type ContentMessage =
     }
   | never;
 
-export type ContentResponse<TMessage extends ContentMessage> =
-  TMessage extends ContentMessage ? boolean : never;
+export type ContentResponse<TMessage extends ContentMessage> = TMessage extends ContentMessage ? boolean : never;
 
 type Message = BackgroundMessage | ContentMessage;
-type MessageHandler<TMessage extends Message> = (
-  message: TMessage
-) => Promise<any>;
-const addMessageListener = <TMessage extends Message>(
-  handler: MessageHandler<TMessage>
-) => {
+type MessageHandler<TMessage extends Message> = (message: TMessage) => Promise<any>;
+const addMessageListener = <TMessage extends Message>(handler: MessageHandler<TMessage>) => {
   browser.runtime.onMessage.addListener(handler);
 };
 

@@ -1,17 +1,18 @@
 import { Book, TitleAvailability } from "./book.js";
 import { BackgroundMessage, addBackgroundListener } from "./message.js";
 import { queryLibrary } from "./overdriveBooks.js";
+import { loadLibrary } from "./storage.js";
 
-const parseBook = async (book: Book): Promise<TitleAvailability> => {
-  const response = queryLibrary("spl", book);
-  return response;
+const parseBook = async (book: Book): Promise<TitleAvailability | undefined> => {
+  const library = await loadLibrary();
+  if (library) {
+    const response = queryLibrary(library?.id, book);
+    return response;
+  }
 };
 
 const init = () => {
   addBackgroundListener(async (message: BackgroundMessage) => {
-    console.log(`[Background] ${JSON.stringify(message)}`);
-    console.log(JSON.stringify(message, undefined, 2));
-
     if (message.data === "parseBook") {
       return parseBook(message.book);
     }
