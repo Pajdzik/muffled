@@ -16,38 +16,39 @@
     <!-- Tab content -->
     <div id="status" class="tab-content">
       <div class="settings-container">
-        <div class="settings-row">
-          <div class="label">Audible detected</div>
-          <div class="settings-value" id="audibleDetected">...</div>
+        <div class="form-row">
+          <label class="form-label" for="audibleDetected">Audible detected</label>
+          <div class="form-value" id="audibleDetected">⌛</div>
         </div>
 
-        <div class="settings-row">
-          <div class="label">Listing detected</div>
-          <div class="settings-value" id="listingDetected">...</div>
+        <div class="form-row">
+          <label class="form-label" for="listingDetected">Listing detected</label>
+          <div class="form-value" id="listingDetected">⌛</div>
         </div>
 
-        <div class="settings-row">
-          <div class="label">Library set up</div>
-          <div class="settings-value" id="librarySetup">...</div>
+        <div class="form-row">
+          <label class="form-label" for="librarySetup">Library set up</label>
+          <div class="form-value" id="librarySetup">⌛</div>
         </div>
 
-        <div class="settings-row">
-          <div class="label">Overdrive API</div>
-          <div class="settings-value" id="overdriveApiStatus">...</div>
+        <div class="form-row">
+          <label class="form-label" for="overdriveApiStatus">Overdrive API</label>
+          <div class="form-value" id="overdriveApiStatus">⌛</div>
         </div>
       </div>
     </div>
 
     <div id="settings" class="tab-content">
-      <div class="settings-row">
-        <div class="label">Library</div>
-        <div class="library-setup ">
-          <div id="filterContainer">
-            <input type="search" id="libraryFilter" placeholder="Filter..." />
-            <button id="clearFilterButton">✖️</button>
-          </div>
-          <select id="librarySelect"></select>
+      <div class="form-row">
+        <label class="form-label" for="library">Library</label>
+        <div class="form-value">
+          <input list="libraries" id="libraryInput" name="library" placeholder="Start typing..." />
+          <datalist id="libraries"></datalist>
         </div>
+      </div>
+      <div class="buttons">
+        <button id="saveButton">Save</button>
+      </div>
     </div>
 
     <div id="logs" class="tab-content">

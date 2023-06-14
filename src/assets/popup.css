@@ -1,5 +1,5 @@
 body {
-  max-width: 400px;
+  width: 320px;
 }
 
 .tab {
@@ -40,51 +40,32 @@ body {
   border-top: none;
 }
 
-.settings-container {
+.form-row {
   display: flex;
-  flex-direction: column;
-}
-
-.settings-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 10px;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.settings-row > div {
-  display: flex;
-}
-
-.label {
-  margin-right: 0;
-}
-
-.settings-value {
-  justify-content: end;
-}
-
-.library-setup {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  padding-left: 10px;
-}
-
-.library-setup > select {
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#filterContainer {
-  display: flex;
-}
-
-#filterContainer > input {
-  flex: 11;
-}
-
-#filterContainer > button {
+.form-row .form-label {
   flex: 1;
+  text-align: left;
+}
+
+.form-row .form-value {
+  flex: 2;
+  text-align: right;
+}
+
+#status .form-label {
+  flex: 3;
+}
+
+#status .form-value {
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
 }
