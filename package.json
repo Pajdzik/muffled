@@ -13,6 +13,8 @@
     "esbuild": "^0.17.18",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
+    "typescript": "^5.0.4",
+    "web-ext": "^7.6.2"
   },
   "scripts": {
     "bundle-background": "esbuild ./src/background.ts --bundle --minify --sourcemap --target=firefox100 --outfile=./dist/background.js --format=esm",
