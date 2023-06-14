@@ -24,7 +24,5 @@
     "copy-manifest": "cp manifest.json dist/manifest.json",
     "copy-manifest-watch": "nodemon --watch manifest.json --exec 'yarn copy-manifest'"
   },
-  "dependencies": {
-    "linkedom": "^0.14.25"
-  }
+  "dependencies": {}
 }
