@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 import { LibrarySummary } from "./libraryTypes.js";
 
 const runsInAddon = () => typeof window === "undefined" || !window.browser;

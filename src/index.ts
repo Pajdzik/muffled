@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 import { createButtons, findBooks, isProductListAvailable } from "./audible.js";
 import { ContentMessage, sendMessageToBackgroundScript } from "./message.js";
 

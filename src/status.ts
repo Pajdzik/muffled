@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 import { sendMessageToContentScript } from "./message.js";
 import { isLibrarySaved } from "./settings.js";
 

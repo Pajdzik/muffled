@@ -1,3 +1,5 @@
+import browser from "webextension-polyfill";
+
 import { Book, TitleAvailability } from "./book.js";
 
 export type BackgroundMessage =

@@ -10,6 +10,7 @@
     "@digitak/esrun": "^3.2.24",
     "@types/firefox-webext-browser": "^111.0.1",
     "@types/node": "^20.2.5",
+    "@types/webextension-polyfill": "^0.10.0",
     "esbuild": "^0.17.18",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
@@ -32,5 +33,7 @@
     "build": "yarn bundle && yarn build-xpi",
     "build-xpi": "yarn web-ext build -s ./dist --overwrite-dest"
   },
-  "dependencies": {}
+  "dependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
 }
