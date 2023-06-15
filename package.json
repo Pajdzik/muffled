@@ -1,6 +1,6 @@
 {
   "name": "muffled",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "type": "module",
   "repository": "https://github.com/Pajdzik/muffled.git",
@@ -27,7 +27,10 @@
     "copy-popup-ui": "cp ./src/popup.{css,html} dist/src/",
     "copy-popup-ui-watch": "nodemon --watch ./src/popup.{css,html} --exec 'yarn copy-popup-ui'",
     "copy-manifest": "cp manifest.json dist/manifest.json",
-    "copy-manifest-watch": "nodemon --watch manifest.json --exec 'yarn copy-manifest'"
+    "copy-manifest-watch": "nodemon --watch manifest.json --exec 'yarn copy-manifest'",
+    "lint": "yarn web-ext lint --source-dir ./dist",
+    "build": "yarn bundle && yarn build-xpi",
+    "build-xpi": "yarn web-ext build -s ./dist --overwrite-dest"
   },
   "dependencies": {}
 }
