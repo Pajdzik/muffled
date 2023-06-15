@@ -8,8 +8,7 @@ const CLIENT_ID_QUERY = "x-client-id=dewey";
 const ADDITIONAL_QUERIES = `${BOOK_FORMAT_QUERY}&${FAUCET_QUERY}&${PER_PAGE_QUERY}&${PAGE_QUERY}&${CLIENT_ID_QUERY}`;
 
 export const OVERDRIVE_HEADERS: HeadersInit = {
-  Accept:
-    "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+  Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
   "Accept-Encoding": "gzip, deflate, br",
   "Accept-Language": "en-US",
   Connection: "keep-alive",

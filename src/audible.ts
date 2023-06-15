@@ -1,10 +1,4 @@
-import {
-  Availability,
-  Book,
-  BookAvailability,
-  TitleAvailability,
-  encodeBookData,
-} from "./book.js";
+import { Availability, Book, BookAvailability, TitleAvailability, encodeBookData } from "./book.js";
 import { logDebug } from "./debug.js";
 
 export type BookComponent = {
@@ -40,9 +34,7 @@ export const isProductListAvailable = (): boolean => {
 };
 
 const findProductList = (): HTMLDivElement | undefined => {
-  const productListElements = document.querySelectorAll<HTMLDivElement>(
-    "div[data-widget='productList']"
-  );
+  const productListElements = document.querySelectorAll<HTMLDivElement>("div[data-widget='productList']");
 
   if (productListElements.length === 0) {
     logDebug("No product list found");
@@ -54,11 +46,8 @@ const findProductList = (): HTMLDivElement | undefined => {
   return productListElements[0];
 };
 
-const findProducts = (
-  productList: HTMLDivElement
-): NodeListOf<HTMLLIElement> => {
-  const productContainers =
-    productList.querySelectorAll<HTMLLIElement>("li.productListItem");
+const findProducts = (productList: HTMLDivElement): NodeListOf<HTMLLIElement> => {
+  const productContainers = productList.querySelectorAll<HTMLLIElement>("li.productListItem");
   if (productContainers.length === 0) {
     logDebug("No product list items found");
   }
@@ -74,12 +63,8 @@ const findBookData = (productContainer: HTMLLIElement): Book | undefined => {
   return parseBooksData(attributes);
 };
 
-const findProductAttributes = (
-  productContainer: HTMLLIElement
-): HTMLUListElement | undefined => {
-  const attributesList = productContainer.querySelector<HTMLUListElement>(
-    "div > div + div > div > div > span > ul"
-  );
+const findProductAttributes = (productContainer: HTMLLIElement): HTMLUListElement | undefined => {
+  const attributesList = productContainer.querySelector<HTMLUListElement>("div > div + div > div > div > span > ul");
   if (!attributesList) {
     logDebug("No attributes found");
     return undefined;
@@ -96,9 +81,7 @@ const parseBooksData = (productAttribute: HTMLUListElement): Book => {
 };
 
 const getTitle = (productAttributeList: HTMLUListElement): string => {
-  const titleElement = productAttributeList.querySelector<HTMLLIElement>(
-    "li[class='bc-list-item']"
-  );
+  const titleElement = productAttributeList.querySelector<HTMLLIElement>("li[class='bc-list-item']");
 
   const titleLink = titleElement?.querySelector("a");
   if (!titleLink) {
@@ -110,8 +93,7 @@ const getTitle = (productAttributeList: HTMLUListElement): string => {
 };
 
 const getAuthor = (productAttributeList: HTMLUListElement): string => {
-  const authorElement =
-    productAttributeList.querySelector<HTMLLIElement>("li.authorLabel");
+  const authorElement = productAttributeList.querySelector<HTMLLIElement>("li.authorLabel");
 
   const authorLink = authorElement?.querySelector("a");
   if (!authorLink) {
@@ -122,31 +104,14 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
   return authorLink.innerText;
 };
 
-export const createButtons = (
-  book: Book,
-  bookAvailability: TitleAvailability,
-  library: string
-) => {
-  const ebookButton = createButton(
-    book,
-    "eBook",
-    bookAvailability.ebook,
-    library
-  );
-  const audiobookButton = createButton(
-    book,
-    "Audiobook",
-    bookAvailability.audiobook,
-    library
-  );
+export const createButtons = (book: Book, bookAvailability: TitleAvailability, library: string) => {
+  const ebookButton = createButton(book, "eBook", bookAvailability.ebook, library);
+  const audiobookButton = createButton(book, "Audiobook", bookAvailability.audiobook, library);
 
   return [audiobookButton, ebookButton];
 };
 
-const getCaption = (
-  type: "eBook" | "Audiobook",
-  availability: Availability
-) => {
+const getCaption = (type: "eBook" | "Audiobook", availability: Availability) => {
   switch (availability) {
     case "available":
       return `Rent ${type} 📗`;
@@ -184,9 +149,9 @@ export const createButton = (
   button.textContent = caption;
 
   if (availability.availability !== "not available") {
-    const link = `https://libbyapp.com/search/${library}/search/query-${encodeBookData(
-      book
-    )}/page-1/${availability.id}/request?key=${library}`;
+    const link = `https://libbyapp.com/search/${library}/search/query-${encodeBookData(book)}/page-1/${
+      availability.id
+    }/request?key=${library}`;
 
     button.onclick = () => {
       openNewTab(link);
