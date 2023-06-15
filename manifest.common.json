@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Aulibby",
+  "version": "0.1.1",
+  "description": "TBD",
+  "content_scripts": [
+    {
+      "matches": ["*://audible.com/*", "*://*.audible.com/*"],
+      "js": ["./src/index.js"]
+    }
+  ],
+  "permissions": ["webRequest", "storage"],
+  "host_permissions": ["*://*.audible.com/*"],
+  "action": {
+    "default_icon": {
+      "32": "./assets/icon.png",
+      "64": "./assets/icon.png"
+    },
+    "default_title": "Aulibby",
+    "default_popup": "./src/popup.html"
+  }
+}

@@ -1,14 +1,11 @@
 #!/usr/bin/env esrun
 
-import {
-  Library,
-  LibrarySearchResult,
-  LibrarySummary,
-} from "./libraryTypes.js";
-import { readLibraryDataFile, writeLibraryDataFile } from "./files.js";
+import { Library, LibrarySearchResult, LibrarySummary } from "./libraryTypes.js";
+import { readFile, writeFile } from "./files.js";
+import path from "path";
 
 const loadSampleResultPage = async (): Promise<LibrarySearchResult> => {
-  return readLibraryDataFile<LibrarySearchResult>(`./sample.json`);
+  return readFile<LibrarySearchResult>(`./sample.json`);
 };
 
 const loadSampleLibraries = async (): Promise<Array<LibrarySummary>> => {
@@ -40,9 +37,7 @@ const loadLibraries = async (): Promise<Array<LibrarySummary>> => {
   });
 
   const results = await Promise.allSettled(queryPromises);
-  const summaries = results
-    .filter(isPromiseFullfilled)
-    .flatMap((summary) => summary.value);
+  const summaries = results.filter(isPromiseFullfilled).flatMap((summary) => summary.value);
 
   const firstPageSummary = parseSearchResult(firstPage);
   return [...firstPageSummary, ...summaries];
@@ -51,16 +46,12 @@ const loadLibraries = async (): Promise<Array<LibrarySummary>> => {
 const fetchLibraries = async (page: number): Promise<LibrarySearchResult> => {
   console.log(`Fetching page ${page}...`);
 
-  const response = await fetch(
-    `https://thunder.api.overdrive.com/v2/libraries?page=${page}`
-  );
+  const response = await fetch(`https://thunder.api.overdrive.com/v2/libraries?page=${page}`);
 
   return response.json();
 };
 
-const parseSearchResult = (
-  result: LibrarySearchResult
-): Array<LibrarySummary> => {
+const parseSearchResult = (result: LibrarySearchResult): Array<LibrarySummary> => {
   return result.items
     .filter(isNotDemoLibrary)
     .filter(supportsLibby)
@@ -71,8 +62,7 @@ const parseSearchResult = (
 };
 
 const isNotDemoLibrary = (library: Library) => !library?.isDemo;
-const supportsLibby = (library: Library) =>
-  library?.enabledPlatforms?.includes("libby");
+const supportsLibby = (library: Library) => library?.enabledPlatforms?.includes("libby");
 
 const parseMode = (): "sample" | "live" => {
   const args = process.argv.slice(2);
@@ -92,13 +82,12 @@ const main = async () => {
   const mode = parseMode();
   console.log(`Loading libraries in ${mode} mode...`);
 
-  const libraries = await (mode === "live"
-    ? loadLibraries()
-    : loadSampleLibraries());
+  const libraries = await (mode === "live" ? loadLibraries() : loadSampleLibraries());
 
   console.log(`Loaded ${libraries.length} libraries`);
 
-  await writeLibraryDataFile(`../assets/libraries.json`, libraries);
+  const fullPath = path.join(__dirname, "../src/assets/libraries.json");
+  await writeFile(fullPath, libraries);
   console.log(`Saved libraries to file`);
 };
 
