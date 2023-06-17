@@ -23,7 +23,7 @@ export const OVERDRIVE_HEADERS: HeadersInit = {
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
 };
 
-const queryOverdrive = (input: RequestInfo | URL): Promise<Response> => {
+const queryOverdrive = async (input: RequestInfo | URL): Promise<Response> => {
   console.log(`URL: ${input}`);
   console.log(`headers: ${JSON.stringify(OVERDRIVE_HEADERS, undefined, 2)}`);
 
@@ -45,7 +45,7 @@ export const queryOverdriveApi = async (
     queries.push(ADDITIONAL_QUERIES);
   }
 
-  const queryContent = queries.length ? queries.join("&") : undefined;
+  const queryContent = (queries.length > 0) ? queries.join("&") : undefined;
   const querySegment = queryContent ? `?${queryContent}` : "";
 
   const url = `${API_BASE}/${path}${querySegment}`;
