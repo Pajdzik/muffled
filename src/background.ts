@@ -1,6 +1,6 @@
-import { Book, TitleAvailability } from "./book.js";
+import { type Book, type TitleAvailability } from "./book.js";
 import { logDebug, logInfo } from "./debug.js";
-import { BackgroundMessage, addBackgroundListener } from "./message.js";
+import { type BackgroundMessage, addBackgroundListener } from "./message.js";
 import { queryLibrary } from "./overdriveBooks.js";
 import { loadLibrary } from "./storage.js";
 
