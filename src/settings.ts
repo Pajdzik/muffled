@@ -1,6 +1,6 @@
 import data from "./assets/libraries.json" assert { type: "json" };
 import { logDebug } from "./debug.js";
-import { LibrarySummary } from "./libraryTypes.js";
+import { type LibrarySummary } from "./libraryTypes.js";
 import { saveLibrary, loadLibrary } from "./storage.js";
 
 const libraries = data as LibrarySummary[];
@@ -26,7 +26,7 @@ const saveCurrentLibrary = async (): Promise<void> => {
   const librarySelect = document.getElementById("libraryInput") as HTMLInputElement;
   const libraryName = librarySelect.value;
   const libraryKey = libraries.find((l) => l.name === libraryName);
-  if (libraryKey) {
+  if (libraryKey != null) {
     await saveLibrary(libraryKey);
   }
 };
@@ -38,7 +38,7 @@ export const isLibrarySaved = async (): Promise<boolean> => {
 
 const initSelectedLibrary = async () => {
   const libraryKey = await loadLibrary();
-  if (libraryKey) {
+  if (libraryKey != null) {
     const librarySelect = document.getElementById("libraryInput") as HTMLInputElement;
     const libraryName = libraries.find((l) => l.id === libraryKey.id)?.name;
     librarySelect.value = libraryName ?? "";
