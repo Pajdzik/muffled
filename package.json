@@ -43,6 +43,8 @@
     "copy-static": "yarn copy-assets && yarn copy-popup-ui && yarn generate-manifests",
     "generate-manifests": "yarn esrun ./scripts/generateManifests.ts",
     "generate-manifest-watch": "nodemon --watch manifest.*.json --exec 'yarn generate-manifests'",
-    "lint": "yarn web-ext lint --source-dir ./dist"
+    "lint-addon": "yarn web-ext lint --source-dir ./dist",
+    "lint": "yarn run eslint ./src",
+    "lint-fix": "yarn run eslint ./src --fix"
   }
 }
