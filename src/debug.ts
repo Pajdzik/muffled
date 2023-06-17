@@ -14,7 +14,7 @@ const log = (level: Level, text: string) => {
   }
 };
 
-export const logDebug = (text: string) => log("debug", text);
-export const logInfo = (text: string) => log("info", text);
-export const logWarn = (text: string) => log("warn", text);
-export const logError = (text: string) => log("error", text);
+export const logDebug = (text: string) => { log("debug", text); };
+export const logInfo = (text: string) => { log("info", text); };
+export const logWarn = (text: string) => { log("warn", text); };
+export const logError = (text: string) => { log("error", text); };
