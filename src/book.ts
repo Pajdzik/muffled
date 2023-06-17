@@ -1,17 +1,17 @@
-export type Book = {
+export interface Book {
   author: string;
   title: string;
-};
+}
 
-export type TitleAvailability = {
+export interface TitleAvailability {
   ebook: BookAvailability;
   audiobook: BookAvailability;
-};
+}
 
-export type BookAvailability = {
+export interface BookAvailability {
   id: string;
   availability: Availability;
-};
+}
 
 export type Availability = "available" | "holdable" | "not available";
 
