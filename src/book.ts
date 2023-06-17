@@ -18,11 +18,11 @@ export type Availability = "available" | "holdable" | "not available";
 export const encodeBookData = (book: Book): string => encodeURIComponent(flattenBookData(book));
 
 const flattenBookData = (book: Book): string => {
-  if (book.author && book.title) {
+  if (book.author != null && book.title != null) {
     return `${book.title}  ${book.author}`;
-  } else if (book.author) {
+  } else if (book.author != null) {
     return book.author;
-  } else if (book.title) {
+  } else if (book.title != null) {
     return book.title;
   }
 

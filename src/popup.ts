@@ -29,16 +29,22 @@ const init = (): void => {
   logDebug("Initializing popup");
 
   assignButtonHandler("status", () => {
-    activate("status", initStatus);
+    activate("status", () => {
+      void initStatus();
+    });
   });
   assignButtonHandler("settings", () => {
-    activate("settings", initSettings);
+    activate("settings", () => {
+      void initSettings();
+    });
   });
   assignButtonHandler("logs", () => {
     activate("logs", () => {});
   });
 
-  activate("settings", initSettings);
+  activate("settings", () => {
+    void initSettings();
+  });
 
   logDebug("Popup initialized");
 };

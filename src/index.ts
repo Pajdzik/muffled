@@ -8,6 +8,7 @@ document.body.style.border = "5px solid red";
 
 const main = async (): Promise<void> => {
   logInfo("Starting Aulibby");
+  initListener();
 
   const bookElements = findBooks();
 
@@ -44,5 +45,4 @@ const initListener = (): void => {
   });
 };
 
-initListener();
-main();
+void main();

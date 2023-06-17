@@ -6,24 +6,24 @@ import { loadLibrary } from "./storage.js";
 
 const parseBook = async (book: Book): Promise<TitleAvailability | undefined> => {
   const library = await loadLibrary();
-  if (library?.id) {
+  if (library?.id != null) {
     const response = queryLibrary(library?.id, book);
     return response;
   }
 };
 
-const init = () => {
+const init = (): void => {
   logDebug("background script loading");
 
   addBackgroundListener(async (message: BackgroundMessage) => {
-    logDebug(`background script received message: ${message}`);
+    logDebug(`background script received message: ${JSON.stringify(message)}`);
 
     if (message.data === "parseBook") {
-      logInfo(`Parsing book: ${message.book}`);
+      logInfo(`Parsing book: ${message.book.author} - "${message.book.title}"`);
       return parseBook(message.book);
     }
 
-    logDebug(`Unknown message: ${message}`);
+    logDebug(`Unknown message`);
   });
 
   logDebug("background script loaded");
