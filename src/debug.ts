@@ -6,10 +6,10 @@ const Levels = {
 };
 
 type Level = keyof typeof Levels;
-const currentLevel: Level = "debug";
+export const LOG_LEVEL: Level = "info";
 
 const log = (level: Level, text: string): void => {
-  if (Levels[currentLevel] <= Levels[level]) {
+  if (Levels[LOG_LEVEL] <= Levels[level]) {
     console.log(`[Aulibby - ${level}]\t${text}`);
   }
 };

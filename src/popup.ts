@@ -2,12 +2,12 @@ import { logDebug } from "./debug.js";
 import { initSettings } from "./settings.js";
 import { initStatus } from "./status.js";
 
-const activate = (id: string, initTab: () => void): void => {
+const activate = async (id: string, initTab: () => Promise<void>): Promise<void> => {
   deactivateAll();
-  const element = document.querySelector<HTMLDivElement>(`#${id}`);
+  const element = document.getElementById(id) as HTMLDivElement;
   if (element != null) {
     element.style.display = "block";
-    initTab();
+    await initTab();
   }
 };
 
@@ -18,35 +18,35 @@ const deactivateAll = (): void => {
   });
 };
 
-const assignButtonHandler = (id: string, handler: () => void): void => {
+const assignButtonHandler = (id: string, handler: () => Promise<void>): void => {
   const button = document.querySelector<HTMLButtonElement>(`#${id}Button`);
   if (button != null) {
-    button.addEventListener("click", handler);
+    button.addEventListener("click", () => {
+      void handler();
+    });
   }
 };
 
-const init = (): void => {
+const activateStatusTab = async (): Promise<void> => {
+  await activate("status", initStatus);
+};
+
+const activateSettingsTab = async (): Promise<void> => {
+  await activate("settings", initSettings);
+};
+
+const activateLogsTab = async (): Promise<void> => {};
+
+const init = async (): Promise<void> => {
   logDebug("Initializing popup");
 
-  assignButtonHandler("status", () => {
-    activate("status", () => {
-      void initStatus();
-    });
-  });
-  assignButtonHandler("settings", () => {
-    activate("settings", () => {
-      void initSettings();
-    });
-  });
-  assignButtonHandler("logs", () => {
-    activate("logs", () => {});
-  });
+  assignButtonHandler("status", activateStatusTab);
+  assignButtonHandler("settings", activateSettingsTab);
+  assignButtonHandler("logs", activateLogsTab);
 
-  activate("settings", () => {
-    void initSettings();
-  });
+  await activateSettingsTab();
 
   logDebug("Popup initialized");
 };
 
-init();
+void init();

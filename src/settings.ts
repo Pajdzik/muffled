@@ -42,23 +42,25 @@ const initSelectedLibrary = async (): Promise<void> => {
   const libraryKey = await loadLibrary();
   if (libraryKey != null) {
     const librarySelect = document.getElementById("libraryInput") as HTMLInputElement;
-    const libraryName = libraries.find((l) => l.id === libraryKey.id)?.name;
-    librarySelect.value = libraryName ?? "";
+    if (librarySelect == null) {
+      throw new Error("Library select element not found");
+    }
+
+    const library = libraries.find((l) => l.id === libraryKey.id);
+    if (library == null) {
+      throw new Error(`Library not found for id: ${libraryKey.id}`);
+    }
+
+    librarySelect.value = library.name ?? "";
   }
 };
 
 export const initSettings = async (): Promise<void> => {
   logDebug("Initializing settings");
 
-  if (loaded) {
-    logDebug("Settings already initialized");
-    return;
-  }
-
   addLibraryOptions();
   initSaveButton();
   await initSelectedLibrary();
-  loaded = true;
 
   logDebug("Settings initialized");
 };

@@ -2,9 +2,7 @@ import browser from "webextension-polyfill";
 
 import { createButtons, findBooks, isProductListAvailable } from "./audible.js";
 import { type ContentMessage, sendMessageToBackgroundScript } from "./message.js";
-import { logDebug, logInfo } from "./debug.js";
-
-document.body.style.border = "5px solid red";
+import { LOG_LEVEL, logDebug, logInfo } from "./debug.js";
 
 const main = async (): Promise<void> => {
   logInfo("Starting Aulibby");
@@ -44,5 +42,9 @@ const initListener = (): void => {
     logDebug("Unknown message");
   });
 };
+
+if (LOG_LEVEL === "debug") {
+  document.body.style.border = "5px solid red";
+}
 
 void main();

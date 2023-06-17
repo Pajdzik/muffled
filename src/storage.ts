@@ -4,7 +4,7 @@ import { type LibrarySummary } from "./libraryTypes.js";
 import { logDebug, logError, logWarn } from "./debug.js";
 
 const runsInAddon = (): boolean => typeof window === "undefined" || window.browser == null;
-const LIBRARY_KEY = "aulible-library-key";
+const LIBRARY_KEY = "aulibby";
 
 const logErrorMessage = (error: unknown): void => {
   const message = error instanceof Error ? error.message : JSON.stringify(e);
@@ -17,7 +17,11 @@ export const saveLibrary = async (library: LibrarySummary): Promise<void> => {
 
     if (runsInAddon()) {
       logDebug("Saving library in addon");
-      await browser.storage.sync.set({ LIBRARY_KEY: library });
+      await browser.storage.sync.set({ [LIBRARY_KEY]: library });
+
+      if (browser.runtime.lastError != null) {
+        throw new Error(browser.runtime.lastError.message ?? "Unknown error");
+      }
     } else {
       logWarn("Saving library in local storage");
       localStorage.setItem(LIBRARY_KEY, JSON.stringify(library));
@@ -36,7 +40,8 @@ export const loadLibrary = async (): Promise<LibrarySummary | undefined> => {
 
     if (runsInAddon()) {
       logDebug("Loading library from addon");
-      library = (await browser.storage.local.get([LIBRARY_KEY])) as LibrarySummary;
+      const storageObject = await browser.storage.sync.get(LIBRARY_KEY);
+      library = storageObject[LIBRARY_KEY] as LibrarySummary;
     } else {
       logWarn("Loading library from local storage");
       const data = localStorage.getItem(LIBRARY_KEY);
