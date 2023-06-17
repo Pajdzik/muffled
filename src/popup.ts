@@ -5,7 +5,7 @@ import { initStatus } from "./status.js";
 const activate = (id: string, initTab: () => void) => {
   deactivateAll();
   const element = document.querySelector<HTMLDivElement>(`#${id}`);
-  if (element) {
+  if (element != null) {
     element.style.display = "block";
     initTab();
   }
@@ -26,9 +26,9 @@ const assignButtonHandler = (id: string, handler: () => void) => {
 const init = () => {
   logDebug("Initializing popup");
 
-  assignButtonHandler("status", () => activate("status", initStatus));
-  assignButtonHandler("settings", () => activate("settings", initSettings));
-  assignButtonHandler("logs", () => activate("logs", () => {}));
+  assignButtonHandler("status", () => { activate("status", initStatus); });
+  assignButtonHandler("settings", () => { activate("settings", initSettings); });
+  assignButtonHandler("logs", () => { activate("logs", () => {}); });
 
   activate("settings", initSettings);
 
