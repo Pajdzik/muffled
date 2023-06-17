@@ -1,8 +1,8 @@
 import { log } from "console";
-import { Book, TitleAvailability, BookAvailability, encodeBookData } from "./book.js";
+import { type Book, type TitleAvailability, type BookAvailability, encodeBookData } from "./book.js";
 import { logDebug } from "./debug.js";
 import { queryOverdriveApi } from "./overdriveApi.js";
-import { OverdriveResponse } from "./overdriveTypes.js";
+import { type OverdriveResponse } from "./overdriveTypes.js";
 
 export const queryLibrary = async (library: string, book: Book): Promise<TitleAvailability> => {
   logDebug(`Querying library ${library} for book ${JSON.stringify(book)}`);
@@ -32,7 +32,7 @@ const parseAvailability = (
     .filter((item) => item.title.toLowerCase() === lowerCaseTitle)
     .filter((item) => item.type.id.trim().toLowerCase() === key);
 
-  if (!availabilities || !availabilities.length) {
+  if (!availabilities || (availabilities.length === 0)) {
     return { id: "0", availability: "not available" };
   }
 
