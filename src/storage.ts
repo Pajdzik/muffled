@@ -3,8 +3,13 @@ import browser from "webextension-polyfill";
 import { type LibrarySummary } from "./libraryTypes.js";
 import { logDebug, logError, logWarn } from "./debug.js";
 
-const runsInAddon = () => typeof window === "undefined" || !window.browser;
+const runsInAddon = (): boolean => typeof window === "undefined" || window.browser == null;
 const LIBRARY_KEY = "aulible-library-key";
+
+const logErrorMessage = (error: unknown): void => {
+  const message = error instanceof Error ? error.message : JSON.stringify(e);
+  logError(`Error saving library: ${message}`);
+};
 
 export const saveLibrary = async (library: LibrarySummary): Promise<void> => {
   try {
@@ -20,7 +25,7 @@ export const saveLibrary = async (library: LibrarySummary): Promise<void> => {
 
     logDebug("Library saved");
   } catch (e) {
-    logError(`Error saving library: ${e}`);
+    logErrorMessage(e);
   }
 };
 
@@ -35,12 +40,12 @@ export const loadLibrary = async (): Promise<LibrarySummary | undefined> => {
     } else {
       logWarn("Loading library from local storage");
       const data = localStorage.getItem(LIBRARY_KEY);
-      library = data ? JSON.parse(data) : undefined;
+      library = data != null ? JSON.parse(data) : undefined;
     }
 
     logDebug(`Loaded library: ${JSON.stringify(library, undefined, 2)}`);
     return library;
   } catch (e) {
-    logError(`Error loading library: ${e}`);
+    logErrorMessage(e);
   }
 };

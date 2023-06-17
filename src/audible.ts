@@ -35,7 +35,7 @@ export const findBooks = (): BookComponent[] => {
 
 export const isProductListAvailable = (): boolean => {
   const productList = findProductList();
-  logDebug(`Product list available: ${!(productList == null)}`);
+  logDebug(`Product list available: ${!(productList == null) ? "yes" : "no"}`);
   return !(productList == null);
 };
 
@@ -109,7 +109,11 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
   return authorLink.innerText;
 };
 
-export const createButtons = (book: Book, bookAvailability: TitleAvailability, library: string) => {
+export const createButtons = (
+  book: Book,
+  bookAvailability: TitleAvailability,
+  library: string
+): [HTMLDivElement, HTMLDivElement] => {
   logDebug("Creating buttons");
 
   const ebookButton = createButton(book, "eBook", bookAvailability.ebook, library);
@@ -118,7 +122,7 @@ export const createButtons = (book: Book, bookAvailability: TitleAvailability, l
   return [audiobookButton, ebookButton];
 };
 
-const getCaption = (type: "eBook" | "Audiobook", availability: Availability) => {
+const getCaption = (type: "eBook" | "Audiobook", availability: Availability): string => {
   switch (availability) {
     case "available":
       return `Rent ${type} 📗`;
@@ -136,8 +140,8 @@ export const createButton = (
   type: "eBook" | "Audiobook",
   availability: BookAvailability,
   library: string
-) => {
-  const openNewTab = (url: string) => {
+): HTMLDivElement => {
+  const openNewTab = (url: string): void => {
     window.open(url, "_blank");
   };
 

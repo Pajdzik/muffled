@@ -8,13 +8,21 @@ const Levels = {
 type Level = keyof typeof Levels;
 const currentLevel: Level = "debug";
 
-const log = (level: Level, text: string) => {
+const log = (level: Level, text: string): void => {
   if (Levels[currentLevel] <= Levels[level]) {
     console.log(`[Aulibby - ${level}]\t${text}`);
   }
 };
 
-export const logDebug = (text: string) => { log("debug", text); };
-export const logInfo = (text: string) => { log("info", text); };
-export const logWarn = (text: string) => { log("warn", text); };
-export const logError = (text: string) => { log("error", text); };
+export const logDebug = (text: string): void => {
+  log("debug", text);
+};
+export const logInfo = (text: string): void => {
+  log("info", text);
+};
+export const logWarn = (text: string): void => {
+  log("warn", text);
+};
+export const logError = (text: string): void => {
+  log("error", text);
+};

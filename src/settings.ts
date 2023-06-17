@@ -7,9 +7,9 @@ const libraries = data as LibrarySummary[];
 
 let loaded = false;
 
-const createLibraryOption = (library: LibrarySummary) => new Option(library.name);
+const createLibraryOption = (library: LibrarySummary): HTMLOptionElement => new Option(library.name);
 
-const addLibraryOptions = () => {
+const addLibraryOptions = (): void => {
   const selectElement = document.getElementById("libraries");
 
   for (const library of libraries) {
@@ -17,9 +17,11 @@ const addLibraryOptions = () => {
   }
 };
 
-const initSaveButton = () => {
+const initSaveButton = (): void => {
   const saveButton = document.getElementById("saveButton");
-  saveButton?.addEventListener("click", saveCurrentLibrary);
+  saveButton?.addEventListener("click", () => {
+    void saveCurrentLibrary();
+  });
 };
 
 const saveCurrentLibrary = async (): Promise<void> => {
@@ -36,7 +38,7 @@ export const isLibrarySaved = async (): Promise<boolean> => {
   return libraryKey !== undefined;
 };
 
-const initSelectedLibrary = async () => {
+const initSelectedLibrary = async (): Promise<void> => {
   const libraryKey = await loadLibrary();
   if (libraryKey != null) {
     const librarySelect = document.getElementById("libraryInput") as HTMLInputElement;

@@ -1,6 +1,6 @@
 export interface OverdriveResponse {
   totalItems: number;
-  queryKeys: QueryKeys;
+  queryKeys: Record<string, string>;
   facets?: Facets;
   sortOptions: SortOption[];
   items: OverdriveItem[];
@@ -187,8 +187,6 @@ interface First {
   page: number;
   pageText: string;
 }
-
-interface QueryKeys {}
 
 interface SortOption {
   isApplied: boolean;

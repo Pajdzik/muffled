@@ -1,4 +1,3 @@
-import { log } from "console";
 import { type Book, type TitleAvailability, type BookAvailability, encodeBookData } from "./book.js";
 import { logDebug } from "./debug.js";
 import { queryOverdriveApi } from "./overdriveApi.js";
@@ -32,7 +31,7 @@ const parseAvailability = (
     .filter((item) => item.title.toLowerCase() === lowerCaseTitle)
     .filter((item) => item.type.id.trim().toLowerCase() === key);
 
-  if (!availabilities || (availabilities.length === 0)) {
+  if (availabilities == null || availabilities.length === 0) {
     return { id: "0", availability: "not available" };
   }
 

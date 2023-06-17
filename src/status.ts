@@ -4,13 +4,15 @@ import { sendMessageToContentScript } from "./message.js";
 import { isLibrarySaved } from "./settings.js";
 import { logDebug } from "./debug.js";
 
-const updateStatus = (settingId: string, status: boolean) => {
+const updateStatus = (settingId: string, status: boolean): void => {
   const element = document.getElementById(settingId);
-  const statusText = status ? "✅" : "❌";
-  element!.innerText = statusText;
+  if (element != null) {
+    const statusText = status ? "✅" : "❌";
+    element.innerText = statusText;
+  }
 };
 
-const getActiveTab = async (): Promise<browser.tabs.Tab | undefined> => {
+const getActiveTab = async (): Promise<browser.Tabs.Tab | undefined> => {
   try {
     const currentTabs = await browser?.tabs.query({
       active: true,
@@ -26,7 +28,7 @@ const getActiveTab = async (): Promise<browser.tabs.Tab | undefined> => {
 const isAudibleActive = async (): Promise<boolean> => {
   const currentTab = await getActiveTab();
 
-  const isAudibleActive = !!currentTab?.url;
+  const isAudibleActive = currentTab?.url != null;
   updateStatus("audibleDetected", isAudibleActive);
 
   return isAudibleActive;
@@ -36,7 +38,7 @@ const isProductListAvailable = async (isAudibleUp: boolean): Promise<void> => {
   const currentTab = await getActiveTab();
 
   const availability =
-    isAudibleUp && currentTab && currentTab.id
+    isAudibleUp && currentTab != null && currentTab.id != null
       ? await sendMessageToContentScript(currentTab.id, {
           data: "detectListing",
         })
@@ -72,9 +74,11 @@ export const initStatus = async (): Promise<void> => {
   logDebug("Initializing status");
 
   const audibleDetected = await isAudibleActive();
-  isProductListAvailable(audibleDetected);
-  isLibraryConfigured();
-  isOverdriveUp();
+  const isProductListAvailablePromise = isProductListAvailable(audibleDetected);
+  const isLibraryConfiguredPromise = isLibraryConfigured();
+  const isOverdriveUpPromise = isOverdriveUp();
+
+  await Promise.allSettled([isProductListAvailablePromise, isLibraryConfiguredPromise, isOverdriveUpPromise]);
 
   logDebug("Status initialized");
 };

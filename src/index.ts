@@ -6,7 +6,7 @@ import { logDebug, logInfo } from "./debug.js";
 
 document.body.style.border = "5px solid red";
 
-const main = async () => {
+const main = async (): Promise<void> => {
   logInfo("Starting Aulibby");
 
   const bookElements = findBooks();
@@ -29,7 +29,7 @@ const main = async () => {
   });
 };
 
-const initListener = () => {
+const initListener = (): void => {
   logInfo("Initializing listener");
 
   browser.runtime.onMessage.addListener(async (message: ContentMessage) => {
@@ -40,7 +40,7 @@ const initListener = () => {
       return isProductListAvailable();
     }
 
-    logDebug(`Unknown message: ${message}`);
+    logDebug("Unknown message");
   });
 };
 

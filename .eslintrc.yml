@@ -9,4 +9,8 @@ parserOptions:
   sourceType: module
   project:
     - "tsconfig.json"
-rules: {}
+rules:
+  no-return-await: off
+  "@typescript-eslint/return-await":
+    - error
+    - in-try-catch

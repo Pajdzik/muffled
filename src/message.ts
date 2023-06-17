@@ -24,7 +24,7 @@ export type ContentResponse<TMessage extends ContentMessage> = TMessage extends 
 
 type Message = BackgroundMessage | ContentMessage;
 type MessageHandler<TMessage extends Message> = (message: TMessage) => Promise<any>;
-const addMessageListener = <TMessage extends Message>(handler: MessageHandler<TMessage>) => {
+const addMessageListener = <TMessage extends Message>(handler: MessageHandler<TMessage>): void => {
   browser.runtime.onMessage.addListener(handler);
 };
 

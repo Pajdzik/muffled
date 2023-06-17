@@ -24,7 +24,7 @@ export const OVERDRIVE_HEADERS: HeadersInit = {
 };
 
 const queryOverdrive = async (input: RequestInfo | URL): Promise<Response> => {
-  console.log(`URL: ${input}`);
+  console.log(`URL: ${JSON.stringify(input, undefined, 2)}`);
   console.log(`headers: ${JSON.stringify(OVERDRIVE_HEADERS, undefined, 2)}`);
 
   return fetch(input, OVERDRIVE_HEADERS);
@@ -38,15 +38,15 @@ export const queryOverdriveApi = async (
   logDebug(`Querying Overdrive API: ${path}`);
 
   const queries = [];
-  if (query) {
+  if (query != null) {
     queries.push(query);
   }
-  if (includeAdditionalQueries) {
+  if (includeAdditionalQueries === true) {
     queries.push(ADDITIONAL_QUERIES);
   }
 
-  const queryContent = (queries.length > 0) ? queries.join("&") : undefined;
-  const querySegment = queryContent ? `?${queryContent}` : "";
+  const queryContent = queries.length > 0 ? queries.join("&") : undefined;
+  const querySegment = queryContent != null ? `?${queryContent}` : "";
 
   const url = `${API_BASE}/${path}${querySegment}`;
 

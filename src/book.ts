@@ -15,7 +15,7 @@ export interface BookAvailability {
 
 export type Availability = "available" | "holdable" | "not available";
 
-export const encodeBookData = (book: Book) => encodeURIComponent(flattenBookData(book));
+export const encodeBookData = (book: Book): string => encodeURIComponent(flattenBookData(book));
 
 const flattenBookData = (book: Book): string => {
   if (book.author && book.title) {
