@@ -1,16 +1,16 @@
-import { Availability, Book, BookAvailability, TitleAvailability, encodeBookData } from "./book.js";
+import { type Availability, type Book, type BookAvailability, type TitleAvailability, encodeBookData } from "./book.js";
 import { logDebug, logInfo, logWarn } from "./debug.js";
 
-export type BookComponent = {
+export interface BookComponent {
   book: Book;
   element: HTMLElement;
-};
+}
 
 export const findBooks = (): BookComponent[] => {
   logDebug("Finding books");
 
   const productList = findProductList();
-  if (!productList) {
+  if (productList == null) {
     logDebug("No product list found");
     return [];
   }
@@ -21,7 +21,7 @@ export const findBooks = (): BookComponent[] => {
   const bookComponents = [];
   for (const element of products) {
     const book = findBookData(element);
-    if (book) {
+    if (book != null) {
       bookComponents.push({
         book,
         element,
@@ -35,8 +35,8 @@ export const findBooks = (): BookComponent[] => {
 
 export const isProductListAvailable = (): boolean => {
   const productList = findProductList();
-  logDebug(`Product list available: ${!!productList}`);
-  return !!productList;
+  logDebug(`Product list available: ${!(productList == null)}`);
+  return !(productList == null);
 };
 
 const findProductList = (): HTMLDivElement | undefined => {
@@ -62,7 +62,7 @@ const findProducts = (productList: HTMLDivElement): NodeListOf<HTMLLIElement> =>
 
 const findBookData = (productContainer: HTMLLIElement): Book | undefined => {
   const attributes = findProductAttributes(productContainer);
-  if (!attributes) {
+  if (attributes == null) {
     return undefined;
   }
   return parseBooksData(attributes);
@@ -70,7 +70,7 @@ const findBookData = (productContainer: HTMLLIElement): Book | undefined => {
 
 const findProductAttributes = (productContainer: HTMLLIElement): HTMLUListElement | undefined => {
   const attributesList = productContainer.querySelector<HTMLUListElement>("div > div + div > div > div > span > ul");
-  if (!attributesList) {
+  if (attributesList == null) {
     logDebug("No attributes found");
     return undefined;
   }
@@ -89,7 +89,7 @@ const getTitle = (productAttributeList: HTMLUListElement): string => {
   const titleElement = productAttributeList.querySelector<HTMLLIElement>("li[class='bc-list-item']");
 
   const titleLink = titleElement?.querySelector("a");
-  if (!titleLink) {
+  if (titleLink == null) {
     logDebug("No title found");
     return "";
   }
@@ -101,7 +101,7 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
   const authorElement = productAttributeList.querySelector<HTMLLIElement>("li.authorLabel");
 
   const authorLink = authorElement?.querySelector("a");
-  if (!authorLink) {
+  if (authorLink == null) {
     logDebug("No author found");
     return "";
   }
