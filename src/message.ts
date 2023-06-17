@@ -1,6 +1,6 @@
 import browser from "webextension-polyfill";
 
-import { Book, TitleAvailability } from "./book.js";
+import { type Book, type TitleAvailability } from "./book.js";
 import { logDebug } from "./debug.js";
 
 export type BackgroundMessage =
@@ -31,14 +31,14 @@ const addMessageListener = <TMessage extends Message>(handler: MessageHandler<TM
 export const addBackgroundListener = addMessageListener<BackgroundMessage>;
 export const addContentListener = addMessageListener<ContentMessage>;
 
-export const sendMessageToBackgroundScript = (
+export const sendMessageToBackgroundScript = async (
   message: BackgroundMessage
 ): Promise<BackgroundResponse<BackgroundMessage>> => {
   logDebug(`Sending message to background script: ${JSON.stringify(message)}`);
   return browser.runtime.sendMessage(message);
 };
 
-export const sendMessageToContentScript = (
+export const sendMessageToContentScript = async (
   tabId: number,
   message: ContentMessage
 ): Promise<ContentResponse<ContentMessage>> => {
