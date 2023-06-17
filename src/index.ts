@@ -1,7 +1,7 @@
 import browser from "webextension-polyfill";
 
 import { createButtons, findBooks, isProductListAvailable } from "./audible.js";
-import { ContentMessage, sendMessageToBackgroundScript } from "./message.js";
+import { type ContentMessage, sendMessageToBackgroundScript } from "./message.js";
 import { logDebug, logInfo } from "./debug.js";
 
 document.body.style.border = "5px solid red";
@@ -19,7 +19,7 @@ const main = async () => {
 
     logDebug(`Availability of ${bookElement.book.title} is ${JSON.stringify(bookAvailability)}`);
 
-    if (bookAvailability) {
+    if (bookAvailability != null) {
       const buttonContainer = bookElement.element.querySelector("#adbl-buy-box-area");
       const [audiobookButton, ebookButton] = createButtons(bookElement.book, bookAvailability, "spl");
 
