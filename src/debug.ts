@@ -10,7 +10,7 @@ const currentLevel: Level = "debug";
 
 const log = (level: Level, text: string) => {
   if (Levels[currentLevel] <= Levels[level]) {
-    console.log(`[Aulibby - ${level}]\t${text}}`);
+    console.log(`[Aulibby - ${level}]\t${text}`);
   }
 };
 

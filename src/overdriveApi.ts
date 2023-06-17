@@ -1,3 +1,5 @@
+import { logDebug } from "./debug.js";
+
 const API_BASE = "https://thunder.api.overdrive.com/v2";
 const BOOK_FORMAT_QUERY =
   "format=ebook-overdrive,ebook-media-do,ebook-overdrive-provisional,audiobook-overdrive,audiobook-overdrive-provisional,magazine-overdrive";
@@ -33,6 +35,8 @@ export const queryOverdriveApi = async (
   query?: string,
   includeAdditionalQueries?: boolean
 ): Promise<Response> => {
+  logDebug(`Querying Overdrive API: ${path}`);
+
   const queries = [];
   if (query) {
     queries.push(query);

@@ -1,5 +1,5 @@
 import { Availability, Book, BookAvailability, TitleAvailability, encodeBookData } from "./book.js";
-import { logDebug } from "./debug.js";
+import { logDebug, logInfo, logWarn } from "./debug.js";
 
 export type BookComponent = {
   book: Book;
@@ -7,14 +7,18 @@ export type BookComponent = {
 };
 
 export const findBooks = (): BookComponent[] => {
+  logDebug("Finding books");
+
   const productList = findProductList();
   if (!productList) {
+    logDebug("No product list found");
     return [];
   }
 
   const products = findProducts(productList);
-  const bookComponents = [];
+  logDebug(`Found ${products.length} products`);
 
+  const bookComponents = [];
   for (const element of products) {
     const book = findBookData(element);
     if (book) {
@@ -25,11 +29,13 @@ export const findBooks = (): BookComponent[] => {
     }
   }
 
+  logInfo(`Found ${bookComponents.length} books`);
   return bookComponents;
 };
 
 export const isProductListAvailable = (): boolean => {
   const productList = findProductList();
+  logDebug(`Product list available: ${!!productList}`);
   return !!productList;
 };
 
@@ -37,10 +43,9 @@ const findProductList = (): HTMLDivElement | undefined => {
   const productListElements = document.querySelectorAll<HTMLDivElement>("div[data-widget='productList']");
 
   if (productListElements.length === 0) {
-    logDebug("No product list found");
     return undefined;
   } else if (productListElements.length > 1) {
-    logDebug("More than one product list found. Returning the first one.");
+    logWarn("More than one product list found. Returning the first one.");
   }
 
   return productListElements[0];
@@ -105,6 +110,8 @@ const getAuthor = (productAttributeList: HTMLUListElement): string => {
 };
 
 export const createButtons = (book: Book, bookAvailability: TitleAvailability, library: string) => {
+  logDebug("Creating buttons");
+
   const ebookButton = createButton(book, "eBook", bookAvailability.ebook, library);
   const audiobookButton = createButton(book, "Audiobook", bookAvailability.audiobook, library);
 

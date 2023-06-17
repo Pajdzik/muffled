@@ -1,4 +1,5 @@
 import data from "./assets/libraries.json" assert { type: "json" };
+import { logDebug } from "./debug.js";
 import { LibrarySummary } from "./libraryTypes.js";
 import { saveLibrary, loadLibrary } from "./storage.js";
 
@@ -45,7 +46,10 @@ const initSelectedLibrary = async () => {
 };
 
 export const initSettings = async (): Promise<void> => {
+  logDebug("Initializing settings");
+
   if (loaded) {
+    logDebug("Settings already initialized");
     return;
   }
 
@@ -53,4 +57,6 @@ export const initSettings = async (): Promise<void> => {
   initSaveButton();
   await initSelectedLibrary();
   loaded = true;
+
+  logDebug("Settings initialized");
 };

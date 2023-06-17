@@ -1,3 +1,4 @@
+import { logDebug } from "./debug.js";
 import { initSettings } from "./settings.js";
 import { initStatus } from "./status.js";
 
@@ -23,11 +24,15 @@ const assignButtonHandler = (id: string, handler: () => void) => {
 };
 
 const init = () => {
+  logDebug("Initializing popup");
+
   assignButtonHandler("status", () => activate("status", initStatus));
   assignButtonHandler("settings", () => activate("settings", initSettings));
   assignButtonHandler("logs", () => activate("logs", () => {}));
 
   activate("settings", initSettings);
+
+  logDebug("Popup initialized");
 };
 
 init();

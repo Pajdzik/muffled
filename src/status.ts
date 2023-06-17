@@ -2,6 +2,7 @@ import browser from "webextension-polyfill";
 
 import { sendMessageToContentScript } from "./message.js";
 import { isLibrarySaved } from "./settings.js";
+import { logDebug } from "./debug.js";
 
 const updateStatus = (settingId: string, status: boolean) => {
   const element = document.getElementById(settingId);
@@ -67,11 +68,13 @@ const isOverdriveUp = async (): Promise<void> => {
   updateStatus("overdriveApiStatus", isOverdriveUp);
 };
 
-const initStatus = async (): Promise<void> => {
+export const initStatus = async (): Promise<void> => {
+  logDebug("Initializing status");
+
   const audibleDetected = await isAudibleActive();
   isProductListAvailable(audibleDetected);
   isLibraryConfigured();
   isOverdriveUp();
-};
 
-export { initStatus };
+  logDebug("Status initialized");
+};

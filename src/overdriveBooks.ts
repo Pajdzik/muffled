@@ -1,11 +1,16 @@
+import { log } from "console";
 import { Book, TitleAvailability, BookAvailability, encodeBookData } from "./book.js";
+import { logDebug } from "./debug.js";
 import { queryOverdriveApi } from "./overdriveApi.js";
 import { OverdriveResponse } from "./overdriveTypes.js";
 
 export const queryLibrary = async (library: string, book: Book): Promise<TitleAvailability> => {
+  logDebug(`Querying library ${library} for book ${JSON.stringify(book)}`);
+
   const httpResponse = await queryOverdriveAvailabilityApi(library, book);
   const overdriveResponse: OverdriveResponse = await httpResponse.json();
 
+  logDebug(`Overdrive response: ${JSON.stringify(overdriveResponse)}`);
   return parseOverdriveResponse(overdriveResponse, book.title);
 };
 
