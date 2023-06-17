@@ -14,10 +14,17 @@
     "@types/firefox-webext-browser": "^111.0.1",
     "@types/node": "^20.2.5",
     "@types/webextension-polyfill": "^0.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
     "esbuild": "^0.17.18",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^35.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4",
+    "typescript": "*",
     "web-ext": "^7.6.2"
   },
   "scripts": {
