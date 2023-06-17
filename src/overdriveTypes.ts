@@ -1,4 +1,4 @@
-export type OverdriveResponse = {
+export interface OverdriveResponse {
   totalItems: number;
   queryKeys: QueryKeys;
   facets?: Facets;
@@ -6,9 +6,9 @@ export type OverdriveResponse = {
   items: OverdriveItem[];
   links: Links;
   totalItemsText: string;
-};
+}
 
-type Facets = {
+interface Facets {
   appliedCount: number;
   availability: AddedDates;
   mediaTypes: AddedDates;
@@ -28,22 +28,22 @@ type Facets = {
   practiceArea: AddedDates;
   classification: AddedDates;
   audiobookDuration: AddedDates;
-};
+}
 
-type AddedDates = {
+interface AddedDates {
   items: AddedDatesItem[];
   name: string;
-};
+}
 
-type AddedDatesItem = {
+interface AddedDatesItem {
   isApplied: boolean;
   totalItemsText: string;
   id: string;
   name: string;
   totalItems?: number;
-};
+}
 
-type OverdriveItem = {
+interface OverdriveItem {
   isAvailable: boolean;
   isPreReleaseTitle: boolean;
   isFastlane: boolean;
@@ -94,49 +94,49 @@ type OverdriveItem = {
   starRating?: number;
   starRatingCount?: number;
   edition?: string;
-};
+}
 
-type Bisac = {
+interface Bisac {
   description: string;
   code: string;
-};
+}
 
-type Constraints = {
+interface Constraints {
   isDisneyEulaRequired: boolean;
-};
+}
 
-type Covers = {
+interface Covers {
   cover150Wide: Cover0Wide;
   cover300Wide: Cover0Wide;
   cover510Wide: Cover0Wide;
-};
+}
 
-type Cover0Wide = {
+interface Cover0Wide {
   primaryColor: PrimaryColor;
   width: number;
   height: number;
   href: string;
-};
+}
 
-type PrimaryColor = {
+interface PrimaryColor {
   rgb: RGB;
   hex: string;
-};
+}
 
-type RGB = {
+interface RGB {
   blue: number;
   green: number;
   red: number;
-};
+}
 
-type Creator = {
+interface Creator {
   id: number;
   sortName: string;
   role: string;
   name: string;
-};
+}
 
-type Format = {
+interface Format {
   isBundleParent: boolean;
   hasAudioSynchronizedText: boolean;
   identifiers: Identifier[];
@@ -151,47 +151,47 @@ type Format = {
   fileSize?: number;
   duration?: string;
   partCount?: number;
-};
+}
 
-type Identifier = {
+interface Identifier {
   value: string;
   type: string;
-};
+}
 
-type Sample = {
+interface Sample {
   href: string;
-};
+}
 
-type Imprint = {
+interface Imprint {
   name: string;
   id: string;
-};
+}
 
-type Ratings = {
+interface Ratings {
   maturityLevel: Imprint;
   naughtyScore: Imprint;
-};
+}
 
-type ReviewCounts = {
+interface ReviewCounts {
   publisherSupplier: number;
   premium: number;
-};
+}
 
-type Links = {
+interface Links {
   self: First;
   first: First;
   last: First;
-};
+}
 
-type First = {
+interface First {
   page: number;
   pageText: string;
-};
+}
 
-type QueryKeys = {};
+interface QueryKeys {}
 
-type SortOption = {
+interface SortOption {
   isApplied: boolean;
   id: string;
   name: string;
-};
+}
