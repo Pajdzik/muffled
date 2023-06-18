@@ -134,3 +134,5 @@ dist
 web-ext-artifacts/
 
 chrome.pem
+
+*.zip
