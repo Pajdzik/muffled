@@ -9,7 +9,7 @@
       "js": ["./src/index.js"]
     }
   ],
-  "permissions": ["webRequest", "storage"],
+  "permissions": ["storage"],
   "host_permissions": ["*://*.audible.com/*"],
   "action": {
     "default_icon": {
