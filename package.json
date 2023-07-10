@@ -15,6 +15,7 @@
     "@types/node": "^20.2.5",
     "@types/webextension-polyfill": "^0.10.0",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "concurrently": "^8.2.0",
     "esbuild": "^0.17.18",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.8.0",
@@ -36,15 +37,16 @@
     "bundle-popup": "esbuild ./src/popup.ts --bundle --sourcemap --target=firefox100 --outfile=./dist/src/popup.js --format=iife",
     "bundle": "mkdir -p dist/src && yarn copy-static && yarn build",
     "copy-assets-watch": "nodemon --watch ./src/assets --ext css,html,png,json,svg --exec 'yarn copy-assets'",
-    "copy-assets": "cp -r ./src/assets dist",
+    "copy-assets": "cp -r ./src/assets/ dist/",
     "copy-popup-ui-watch": "nodemon --watch ./src/popup.{css,html} --exec 'yarn copy-popup-ui'",
-    "copy-popup-ui": "cp ./src/popup.{css,html} dist/src/",
-    "copy-dist": "cp -r ./dist/{assets,src} dist/firefox && cp -r ./dist/{assets,src} dist/chrome",
+    "copy-popup-ui": "cp ./src/popup.{css,html} ./dist/src/",
+    "copy-dist": "cp -r ./dist/{assets,src} ./dist/firefox && cp -r ./dist/{assets,src} dist/chrome",
     "copy-static": "yarn copy-assets && yarn copy-popup-ui && yarn generate-manifests",
     "generate-manifests": "yarn esrun ./scripts/generateManifests.ts",
     "generate-manifest-watch": "nodemon --watch manifest.*.json --exec 'yarn generate-manifests'",
     "lint-addon": "yarn web-ext lint --source-dir ./dist",
     "lint": "yarn run eslint ./src",
-    "lint-fix": "yarn run eslint ./src --fix"
+    "lint-fix": "yarn run eslint ./src --fix",
+    "watch": "concurrently 'yarn:bundle-* --watch'"
   }
 }
