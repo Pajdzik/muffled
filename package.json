@@ -43,10 +43,11 @@
     "copy-dist": "cp -r ./dist/{assets,src} ./dist/firefox && cp -r ./dist/{assets,src} dist/chrome",
     "copy-static": "yarn copy-assets && yarn copy-popup-ui && yarn generate-manifests",
     "generate-manifests": "yarn esrun ./scripts/generateManifests.ts",
-    "generate-manifest-watch": "nodemon --watch manifest.*.json --exec 'yarn generate-manifests'",
+    "generate-manifests-watch": "nodemon --watch manifest.*.json --exec 'yarn generate-manifests'",
+    "lint": "yarn lint-src && yarn lint-addon",
     "lint-addon": "yarn web-ext lint --source-dir ./dist",
-    "lint": "yarn run eslint ./src",
-    "lint-fix": "yarn run eslint ./src --fix",
+    "lint-src": "yarn run eslint ./src",
+    "lint-src-fix": "yarn run eslint ./src --fix",
     "watch": "concurrently 'yarn:bundle-* --watch'"
   }
 }

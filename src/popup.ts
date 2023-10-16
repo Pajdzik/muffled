@@ -1,4 +1,5 @@
 import { logDebug } from "./debug.js";
+import { initLogs } from "./logs.js";
 import { initSettings } from "./settings.js";
 import { initStatus } from "./status.js";
 
@@ -35,7 +36,9 @@ const activateSettingsTab = async (): Promise<void> => {
   await activate("settings", initSettings);
 };
 
-const activateLogsTab = async (): Promise<void> => {};
+const activateLogsTab = async (): Promise<void> => {
+  await activate("logs", initLogs);
+};
 
 const init = async (): Promise<void> => {
   logDebug("Initializing popup");
