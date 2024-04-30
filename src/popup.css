@@ -28,8 +28,8 @@ body {
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.tab .active {
+  background-color: #f00;
 }
 
 /* Style the tab content */

@@ -5,9 +5,15 @@ import { initStatus } from "./status.js";
 
 const activate = async (id: string, initTab: () => Promise<void>): Promise<void> => {
   deactivateAll();
-  const element = document.getElementById(id) as HTMLDivElement;
-  if (element != null) {
-    element.style.display = "block";
+
+  const buttonElement = document.getElementById(`${id}Button`) as HTMLButtonElement;
+  if (buttonElement != null) {
+    buttonElement.classList.add("active");
+  }
+
+  const tabContentElement = document.getElementById(id) as HTMLDivElement;
+  if (tabContentElement != null) {
+    tabContentElement.style.display = "block";
     await initTab();
   }
 };
